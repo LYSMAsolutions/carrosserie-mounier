@@ -124,7 +124,7 @@
     const data = Object.fromEntries(new FormData(contactForm).entries());
 
     try {
-      const response = await fetch("TON_URL_APPS_SCRIPT_ICI", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbxiFmkIlqqiGiy8WOiR1UVF32yPIkvmYw8y5HsvhuoTidWveaTOG5nbeEsjk_MxThxU/exec", {
         method: "POST",
         body: JSON.stringify(data),
       });
