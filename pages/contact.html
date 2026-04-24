@@ -76,10 +76,13 @@
           <h3>Votre demande</h3>
 
           <div class="form-grid">
-            <input class="input" type="text" placeholder="Nom">
-            <input class="input" type="email" placeholder="Email">
-            <input class="input" type="tel" placeholder="Téléphone">
-            <textarea class="textarea" placeholder="Décrivez votre besoin"></textarea>
+            <input class="input" type="text" placeholder="Nom" required>
+            <input class="input" type="email" placeholder="Email" required>
+            <input class="input" type="tel" placeholder="Téléphone" required>
+            <input class="input uppercase" type="immatriculation" placeholder="Immatriculation" required>
+            <input class="input uppercase" type="marque" placeholder="Marque de votre véhicule" required>
+            <input class="input uppercase" type="modele" placeholder="Modéle de votre véhicule" required>
+            <textarea class="textarea" placeholder="Décrivez votre besoin" required></textarea>
             <button class="btn btn-primary" type="submit">Envoyer la demande →</button>
           </div>
         </form>
@@ -107,5 +110,36 @@
 
   <script src="../js/main.js"></script>
   <script src="../js/animations.js"></script>
+  <script>
+  const contactForm = document.getElementById("contactForm");
+  const formMessage = document.getElementById("formMessage");
+
+  contactForm.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    formMessage.textContent = "Envoi en cours...";
+    formMessage.className = "form-message";
+
+    const data = Object.fromEntries(new FormData(contactForm).entries());
+
+    try {
+      const response = await fetch("TON_URL_APPS_SCRIPT_ICI", {
+        method: "POST",
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Erreur envoi");
+      }
+
+      formMessage.textContent = "Votre demande a bien été envoyée.";
+      formMessage.className = "form-message success";
+      contactForm.reset();
+    } catch (error) {
+      formMessage.textContent = "Erreur lors de l’envoi. Merci de réessayer ou d’appeler directement.";
+      formMessage.className = "form-message error";
+    }
+  });
+</script>
 </body>
 </html>
