@@ -742,3 +742,7 @@ body {
 .form-message.error {
   color: #b91c1c;
 }
+
+.uppercase {
+  text-transform: uppercase;
+}
