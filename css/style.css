@@ -712,3 +712,40 @@ body {
 .mobile-toggle {
   display: none;
 }
+
+@media (max-width: 720px) {
+  .partners {
+    padding: 22px 0;
+  }
+
+  .partners-inner {
+    gap: 18px;
+  }
+
+  .logo-marquee {
+    width: 100%;
+    overflow: hidden;
+    padding: 14px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+
+  .logo-track {
+    gap: 42px;
+    animation: scrollLogos 16s linear infinite;
+  }
+
+  .partner-logo {
+    min-width: 120px;
+  }
+
+  .partner-logo img {
+    max-height: 34px;
+    opacity: 0.85;
+  }
+
+  .partner-logo img {
+    filter: grayscale(35%);
+    opacity: 0.95;
+  }
+}
