@@ -376,19 +376,25 @@ body {
   justify-content: center;
 }
 
+/* ===== LOGOS PARTENAIRES PREMIUM ===== */
+
 .partner-logo img {
-  max-height: 42px;
+  max-height: 40px;
   width: auto;
   object-fit: contain;
-  filter: grayscale(100%);
-  opacity: 0.72;
-  transition: 0.3s ease;
+
+  /* effet premium gris */
+  filter: grayscale(100%) brightness(0.7);
+  opacity: 0.7;
+
+  transition: all 0.3s ease;
 }
 
+/* hover desktop */
 .partner-logo img:hover {
-  filter: grayscale(0%);
+  filter: grayscale(0%) brightness(1);
   opacity: 1;
-  transform: scale(1.06);
+  transform: scale(1.05);
 }
 
 @keyframes scrollLogos {
@@ -745,4 +751,23 @@ body {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+/* animation légère mobile */
+
+@keyframes logoPulse {
+  from {
+    filter: grayscale(100%) brightness(0.7);
+    opacity: 0.6;
+  }
+  to {
+    filter: grayscale(80%) brightness(0.9);
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 720px) {
+  .logo-track img {
+    animation: logoPulse 4s infinite alternate;
+  }
 }
