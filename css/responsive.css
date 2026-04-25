@@ -312,3 +312,33 @@
     top: 72px;
   }
 }
+
+@media (max-width: 720px) {
+  .partner-logo {
+    min-width: 120px;
+    height: 54px;
+    background: transparent;
+  }
+
+  .partner-logo img {
+    max-height: 38px;
+    max-width: 105px;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%) contrast(1.2) brightness(0.72);
+    opacity: 0.86;
+  }
+
+  .logo-track {
+    gap: 42px;
+    animation-duration: 24s;
+  }
+
+  .logo-marquee {
+    background: #fff;
+  }
+
+  .logo-marquee::before,
+  .logo-marquee::after {
+    width: 42px;
+  }
+}
