@@ -282,5 +282,72 @@
 
   <script src="js/main.js"></script>
   <script src="js/animations.js"></script>
+  <script>
+  const marquee = document.querySelector(".logo-marquee");
+  const track = document.querySelector(".logo-track");
+
+  let restartTimer;
+  let isDragging = false;
+  let startX = 0;
+  let currentX = 0;
+
+  function pauseLogos() {
+    track.classList.add("is-paused");
+
+    clearTimeout(restartTimer);
+    restartTimer = setTimeout(() => {
+      if (!isDragging) {
+        track.classList.remove("is-paused");
+      }
+    }, 1500);
+  }
+
+  function startDrag(x) {
+    isDragging = true;
+    startX = x;
+    marquee.classList.add("is-dragging");
+    track.classList.add("is-paused");
+  }
+
+  function moveDrag(x) {
+    if (!isDragging) return;
+
+    const delta = x - startX;
+    currentX += delta;
+    startX = x;
+
+    track.style.transform = `translateX(${currentX}px)`;
+  }
+
+  function endDrag() {
+    isDragging = false;
+    marquee.classList.remove("is-dragging");
+
+    clearTimeout(restartTimer);
+    restartTimer = setTimeout(() => {
+      track.style.transform = "";
+      track.classList.remove("is-paused");
+      currentX = 0;
+    }, 1500);
+  }
+
+  if (marquee && track) {
+    marquee.addEventListener("click", pauseLogos);
+
+    marquee.addEventListener("mousedown", (e) => startDrag(e.clientX));
+    window.addEventListener("mousemove", (e) => moveDrag(e.clientX));
+    window.addEventListener("mouseup", endDrag);
+
+    marquee.addEventListener("touchstart", (e) => {
+      startDrag(e.touches[0].clientX);
+    });
+
+    marquee.addEventListener("touchmove", (e) => {
+      moveDrag(e.touches[0].clientX);
+    });
+
+    marquee.addEventListener("touchend", endDrag);
+  }
+</script>
 </body>
 </html>
