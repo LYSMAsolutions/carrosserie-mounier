@@ -76,8 +76,9 @@
   <h3>Votre demande</h3>
 
   <div class="form-grid">
-    <input class="input" type="text" name="nom" placeholder="Nom" required>
-    <input class="input" type="email" name="email" placeholder="Email" required>
+    <input class="input uppercase" type="text" name="nom" placeholder="Nom" required>
+    <input class="input uppercase" type="text" name="prenom" placeholder="Prénom" required>
+    <input class="input uppercase" type="email" name="email" placeholder="Email" required>
     <input class="input" type="tel" name="telephone" placeholder="Téléphone" required>
     <input class="input uppercase" type="text" name="immatriculation" placeholder="Immatriculation" required>
     <input class="input uppercase" type="text" name="marque" placeholder="Marque de votre véhicule" required>
@@ -129,7 +130,7 @@
     data.modele = (data.modele || "").toUpperCase();
 
     try {
-      await fetch("https://script.google.com/macros/s/AKfycbwGG06cvmfudPSRqqs7M_G__XqoJEkvttBrUO4d2AOMudTYkravA6czxTAuFWoC235b/exec", {
+      await fetch("https://script.google.com/macros/s/AKfycbwueI9oELfDzLOP147ctzfo5KOy3THasXKfIqqecLMuVsFH_lqDR3q087oN62WbXwg9/exec", {
         method: "POST",
         mode: "no-cors",
         body: JSON.stringify(data)
