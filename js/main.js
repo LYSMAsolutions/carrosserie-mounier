@@ -302,3 +302,22 @@ function initPrestationCardTilt() {
 
 initPrestationCardTilt();
 
+
+function initSmartEmailLinks() {
+  const links = document.querySelectorAll(".js-email-action[data-webmail]");
+  if (!links.length) return;
+
+  const isTouchDevice = window.matchMedia("(hover: none), (pointer: coarse)").matches;
+
+  links.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      if (isTouchDevice) return;
+      const webmailUrl = link.dataset.webmail;
+      if (!webmailUrl) return;
+      event.preventDefault();
+      window.open(webmailUrl, "_blank", "noopener,noreferrer");
+    });
+  });
+}
+
+initSmartEmailLinks();

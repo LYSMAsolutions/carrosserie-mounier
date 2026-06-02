@@ -9,6 +9,8 @@
     "dev": "node scripts/static-server.mjs --port 3021",
     "start": "node scripts/static-server.mjs --port 3021",
     "check": "node scripts/check-static-site.mjs"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
   }
 }
-
