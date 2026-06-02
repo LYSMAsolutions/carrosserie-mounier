@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
@@ -88,7 +88,7 @@
         <aside class="contact-card recruitment-intro reveal">
           <div class="kicker">Candidature</div>
           <h2 class="section-title recruitment-title-sm">Rejoindre l'équipe</h2>
-          <p class="section-desc">Envoyez vos coordonnées, quelques mots sur votre profil et votre CV. L'équipe vous recontactera si votre candidature correspond aux besoins de l'atelier.</p>
+          <p class="section-desc">Envoyez vos coordonnées et votre CV. Vous pouvez également ajouter quelques mots sur votre parcours afin de mieux présenter votre candidature à l'atelier.</p>
         </aside>
 
         <form class="contact-form recruitment-form reveal" id="recruitmentForm">
@@ -99,7 +99,8 @@
             <input class="input" type="tel" name="telephone" placeholder="Téléphone" maxlength="30" autocomplete="tel" required>
             <input class="input" type="text" name="poste" placeholder="Poste recherché" maxlength="100">
             <input class="input" type="file" name="cv" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required>
-            <textarea class="textarea" name="message" placeholder="Votre message" maxlength="1800"></textarea>
+            <textarea class="textarea" name="message" placeholder="Message de motivation facultatif" maxlength="1800"></textarea>
+            <p class="form-help">Le message de motivation reste facultatif, mais une candidature accompagnée de quelques mots sur votre parcours et vos motivations sera étudiée avec davantage de précision.</p>
             <input class="form-honeypot" type="text" name="site_web" tabindex="-1" autocomplete="off" aria-hidden="true">
             <button class="btn btn-primary" type="submit">Envoyer ma candidature</button>
             <p id="recruitmentMessage" class="form-message"></p>
@@ -140,7 +141,7 @@
     const recruitmentForm = document.getElementById("recruitmentForm");
     const recruitmentMessage = document.getElementById("recruitmentMessage");
     const recruitmentSubmit = recruitmentForm.querySelector("button[type='submit']");
-    const recruitmentEndpoint = "https://script.google.com/macros/s/AKfycbxIFR7-BbTDeyDr9l2K8MlaTrJ7bf0ocdq7R1_mJ71eo72fIQARMbNOx7Q_Qt2BIx0c/exec";
+    const recruitmentEndpoint = "https://script.google.com/macros/s/AKfycbxdTNfyWLPcaBX7pzVkOqECs11MDgafdXkG9F3h0JXqxEs4hkoO3s86MifLnQGCMyqN/exec";
     const maxCvSize = 5 * 1024 * 1024;
     const allowedCvTypes = [
       "application/pdf",
@@ -221,6 +222,9 @@
   </script>
 </body>
 </html>
+
+
+
 
 
 
