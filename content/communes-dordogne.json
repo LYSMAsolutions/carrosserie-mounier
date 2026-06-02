@@ -1,0 +1,3535 @@
+﻿[
+    {
+        "nom":  "Abjat-sur-Bandiat",
+        "code":  "24001",
+        "codesPostaux":  [
+                             "24300"
+                         ]
+    },
+    {
+        "nom":  "Agonac",
+        "code":  "24002",
+        "codesPostaux":  [
+                             "24460"
+                         ]
+    },
+    {
+        "nom":  "Ajat",
+        "code":  "24004",
+        "codesPostaux":  [
+                             "24210"
+                         ]
+    },
+    {
+        "nom":  "Alles-sur-Dordogne",
+        "code":  "24005",
+        "codesPostaux":  [
+                             "24480"
+                         ]
+    },
+    {
+        "nom":  "Allas-les-Mines",
+        "code":  "24006",
+        "codesPostaux":  [
+                             "24220"
+                         ]
+    },
+    {
+        "nom":  "Allemans",
+        "code":  "24007",
+        "codesPostaux":  [
+                             "24600"
+                         ]
+    },
+    {
+        "nom":  "Angoisse",
+        "code":  "24008",
+        "codesPostaux":  [
+                             "24270"
+                         ]
+    },
+    {
+        "nom":  "Anlhiac",
+        "code":  "24009",
+        "codesPostaux":  [
+                             "24160"
+                         ]
+    },
+    {
+        "nom":  "Annesse-et-Beaulieu",
+        "code":  "24010",
+        "codesPostaux":  [
+                             "24430"
+                         ]
+    },
+    {
+        "nom":  "Antonne-et-Trigonant",
+        "code":  "24011",
+        "codesPostaux":  [
+                             "24420"
+                         ]
+    },
+    {
+        "nom":  "Archignac",
+        "code":  "24012",
+        "codesPostaux":  [
+                             "24590"
+                         ]
+    },
+    {
+        "nom":  "Aubas",
+        "code":  "24014",
+        "codesPostaux":  [
+                             "24290"
+                         ]
+    },
+    {
+        "nom":  "Audrix",
+        "code":  "24015",
+        "codesPostaux":  [
+                             "24260"
+                         ]
+    },
+    {
+        "nom":  "Augignac",
+        "code":  "24016",
+        "codesPostaux":  [
+                             "24300"
+                         ]
+    },
+    {
+        "nom":  "Auriac-du-Périgord",
+        "code":  "24018",
+        "codesPostaux":  [
+                             "24290"
+                         ]
+    },
+    {
+        "nom":  "Azerat",
+        "code":  "24019",
+        "codesPostaux":  [
+                             "24210"
+                         ]
+    },
+    {
+        "nom":  "La Bachellerie",
+        "code":  "24020",
+        "codesPostaux":  [
+                             "24210"
+                         ]
+    },
+    {
+        "nom":  "Badefols-d\u0027Ans",
+        "code":  "24021",
+        "codesPostaux":  [
+                             "24390"
+                         ]
+    },
+    {
+        "nom":  "Badefols-sur-Dordogne",
+        "code":  "24022",
+        "codesPostaux":  [
+                             "24150"
+                         ]
+    },
+    {
+        "nom":  "Baneuil",
+        "code":  "24023",
+        "codesPostaux":  [
+                             "24150"
+                         ]
+    },
+    {
+        "nom":  "Bardou",
+        "code":  "24024",
+        "codesPostaux":  [
+                             "24560"
+                         ]
+    },
+    {
+        "nom":  "Bars",
+        "code":  "24025",
+        "codesPostaux":  [
+                             "24210"
+                         ]
+    },
+    {
+        "nom":  "Bassillac et Auberoche",
+        "code":  "24026",
+        "codesPostaux":  [
+                             "24330",
+                             "24640"
+                         ]
+    },
+    {
+        "nom":  "Bayac",
+        "code":  "24027",
+        "codesPostaux":  [
+                             "24150"
+                         ]
+    },
+    {
+        "nom":  "Beaumontois en Périgord",
+        "code":  "24028",
+        "codesPostaux":  [
+                             "24440"
+                         ]
+    },
+    {
+        "nom":  "Beaupouyet",
+        "code":  "24029",
+        "codesPostaux":  [
+                             "24400"
+                         ]
+    },
+    {
+        "nom":  "Beauregard-de-Terrasson",
+        "code":  "24030",
+        "codesPostaux":  [
+                             "24120"
+                         ]
+    },
+    {
+        "nom":  "Beauregard-et-Bassac",
+        "code":  "24031",
+        "codesPostaux":  [
+                             "24140"
+                         ]
+    },
+    {
+        "nom":  "Beauronne",
+        "code":  "24032",
+        "codesPostaux":  [
+                             "24400"
+                         ]
+    },
+    {
+        "nom":  "Beleymas",
+        "code":  "24034",
+        "codesPostaux":  [
+                             "24140"
+                         ]
+    },
+    {
+        "nom":  "Pays de Belvès",
+        "code":  "24035",
+        "codesPostaux":  [
+                             "24170"
+                         ]
+    },
+    {
+        "nom":  "Berbiguières",
+        "code":  "24036",
+        "codesPostaux":  [
+                             "24220"
+                         ]
+    },
+    {
+        "nom":  "Bergerac",
+        "code":  "24037",
+        "codesPostaux":  [
+                             "24100"
+                         ]
+    },
+    {
+        "nom":  "Bertric-Burée",
+        "code":  "24038",
+        "codesPostaux":  [
+                             "24320"
+                         ]
+    },
+    {
+        "nom":  "Besse",
+        "code":  "24039",
+        "codesPostaux":  [
+                             "24550"
+                         ]
+    },
+    {
+        "nom":  "Beynac-et-Cazenac",
+        "code":  "24040",
+        "codesPostaux":  [
+                             "24220"
+                         ]
+    },
+    {
+        "nom":  "Biras",
+        "code":  "24042",
+        "codesPostaux":  [
+                             "24310"
+                         ]
+    },
+    {
+        "nom":  "Biron",
+        "code":  "24043",
+        "codesPostaux":  [
+                             "24540"
+                         ]
+    },
+    {
+        "nom":  "Boisse",
+        "code":  "24045",
+        "codesPostaux":  [
+                             "24560"
+                         ]
+    },
+    {
+        "nom":  "Boisseuilh",
+        "code":  "24046",
+        "codesPostaux":  [
+                             "24390"
+                         ]
+    },
+    {
+        "nom":  "Bonneville-et-Saint-Avit-de-Fumadières",
+        "code":  "24048",
+        "codesPostaux":  [
+                             "24230"
+                         ]
+    },
+    {
+        "nom":  "Borrèze",
+        "code":  "24050",
+        "codesPostaux":  [
+                             "24590"
+                         ]
+    },
+    {
+        "nom":  "Bosset",
+        "code":  "24051",
+        "codesPostaux":  [
+                             "24130"
+                         ]
+    },
+    {
+        "nom":  "Bouillac",
+        "code":  "24052",
+        "codesPostaux":  [
+                             "24480"
+                         ]
+    },
+    {
+        "nom":  "Boulazac Isle Manoire",
+        "code":  "24053",
+        "codesPostaux":  [
+                             "24330",
+                             "24750"
+                         ]
+    },
+    {
+        "nom":  "Bouniagues",
+        "code":  "24054",
+        "codesPostaux":  [
+                             "24560"
+                         ]
+    },
+    {
+        "nom":  "Bourdeilles",
+        "code":  "24055",
+        "codesPostaux":  [
+                             "24310"
+                         ]
+    },
+    {
+        "nom":  "Le Bourdeix",
+        "code":  "24056",
+        "codesPostaux":  [
+                             "24300"
+                         ]
+    },
+    {
+        "nom":  "Bourg-des-Maisons",
+        "code":  "24057",
+        "codesPostaux":  [
+                             "24320"
+                         ]
+    },
+    {
+        "nom":  "Bourg-du-Bost",
+        "code":  "24058",
+        "codesPostaux":  [
+                             "24600"
+                         ]
+    },
+    {
+        "nom":  "Bourgnac",
+        "code":  "24059",
+        "codesPostaux":  [
+                             "24400"
+                         ]
+    },
+    {
+        "nom":  "Bourniquel",
+        "code":  "24060",
+        "codesPostaux":  [
+                             "24150"
+                         ]
+    },
+    {
+        "nom":  "Bourrou",
+        "code":  "24061",
+        "codesPostaux":  [
+                             "24110"
+                         ]
+    },
+    {
+        "nom":  "Bouteilles-Saint-Sébastien",
+        "code":  "24062",
+        "codesPostaux":  [
+                             "24320"
+                         ]
+    },
+    {
+        "nom":  "Bouzic",
+        "code":  "24063",
+        "codesPostaux":  [
+                             "24250"
+                         ]
+    },
+    {
+        "nom":  "Brantôme en Périgord",
+        "code":  "24064",
+        "codesPostaux":  [
+                             "24310",
+                             "24460",
+                             "24530"
+                         ]
+    },
+    {
+        "nom":  "Brouchaud",
+        "code":  "24066",
+        "codesPostaux":  [
+                             "24210"
+                         ]
+    },
+    {
+        "nom":  "Le Bugue",
+        "code":  "24067",
+        "codesPostaux":  [
+                             "24260"
+                         ]
+    },
+    {
+        "nom":  "Le Buisson-de-Cadouin",
+        "code":  "24068",
+        "codesPostaux":  [
+                             "24480"
+                         ]
+    },
+    {
+        "nom":  "Bussac",
+        "code":  "24069",
+        "codesPostaux":  [
+                             "24350"
+                         ]
+    },
+    {
+        "nom":  "Busserolles",
+        "code":  "24070",
+        "codesPostaux":  [
+                             "24360"
+                         ]
+    },
+    {
+        "nom":  "Bussière-Badil",
+        "code":  "24071",
+        "codesPostaux":  [
+                             "24360"
+                         ]
+    },
+    {
+        "nom":  "Calès",
+        "code":  "24073",
+        "codesPostaux":  [
+                             "24150"
+                         ]
+    },
+    {
+        "nom":  "Calviac-en-Périgord",
+        "code":  "24074",
+        "codesPostaux":  [
+                             "24370"
+                         ]
+    },
+    {
+        "nom":  "Campagnac-lès-Quercy",
+        "code":  "24075",
+        "codesPostaux":  [
+                             "24550"
+                         ]
+    },
+    {
+        "nom":  "Campagne",
+        "code":  "24076",
+        "codesPostaux":  [
+                             "24260"
+                         ]
+    },
+    {
+        "nom":  "Campsegret",
+        "code":  "24077",
+        "codesPostaux":  [
+                             "24140"
+                         ]
+    },
+    {
+        "nom":  "Capdrot",
+        "code":  "24080",
+        "codesPostaux":  [
+                             "24540"
+                         ]
+    },
+    {
+        "nom":  "Carlux",
+        "code":  "24081",
+        "codesPostaux":  [
+                             "24370"
+                         ]
+    },
+    {
+        "nom":  "Carsac-Aillac",
+        "code":  "24082",
+        "codesPostaux":  [
+                             "24200"
+                         ]
+    },
+    {
+        "nom":  "Carsac-de-Gurson",
+        "code":  "24083",
+        "codesPostaux":  [
+                             "24610"
+                         ]
+    },
+    {
+        "nom":  "Carves",
+        "code":  "24084",
+        "codesPostaux":  [
+                             "24170"
+                         ]
+    },
+    {
+        "nom":  "La Cassagne",
+        "code":  "24085",
+        "codesPostaux":  [
+                             "24120"
+                         ]
+    },
+    {
+        "nom":  "Castelnaud-la-Chapelle",
+        "code":  "24086",
+        "codesPostaux":  [
+                             "24250"
+                         ]
+    },
+    {
+        "nom":  "Castels et Bézenac",
+        "code":  "24087",
+        "codesPostaux":  [
+                             "24220"
+                         ]
+    },
+    {
+        "nom":  "Cause-de-Clérans",
+        "code":  "24088",
+        "codesPostaux":  [
+                             "24150"
+                         ]
+    },
+    {
+        "nom":  "Celles",
+        "code":  "24090",
+        "codesPostaux":  [
+                             "24600"
+                         ]
+    },
+    {
+        "nom":  "Cénac-et-Saint-Julien",
+        "code":  "24091",
+        "codesPostaux":  [
+                             "24250"
+                         ]
+    },
+    {
+        "nom":  "Chalagnac",
+        "code":  "24094",
+        "codesPostaux":  [
+                             "24380"
+                         ]
+    },
+    {
+        "nom":  "Chalais",
+        "code":  "24095",
+        "codesPostaux":  [
+                             "24800"
+                         ]
+    },
+    {
+        "nom":  "Champagnac-de-Belair",
+        "code":  "24096",
+        "codesPostaux":  [
+                             "24530"
+                         ]
+    },
+    {
+        "nom":  "Champagne-et-Fontaine",
+        "code":  "24097",
+        "codesPostaux":  [
+                             "24320"
+                         ]
+    },
+    {
+        "nom":  "Champcevinel",
+        "code":  "24098",
+        "codesPostaux":  [
+                             "24750"
+                         ]
+    },
+    {
+        "nom":  "Champniers-et-Reilhac",
+        "code":  "24100",
+        "codesPostaux":  [
+                             "24360"
+                         ]
+    },
+    {
+        "nom":  "Champs-Romain",
+        "code":  "24101",
+        "codesPostaux":  [
+                             "24470"
+                         ]
+    },
+    {
+        "nom":  "Chancelade",
+        "code":  "24102",
+        "codesPostaux":  [
+                             "24650"
+                         ]
+    },
+    {
+        "nom":  "Chantérac",
+        "code":  "24104",
+        "codesPostaux":  [
+                             "24190"
+                         ]
+    },
+    {
+        "nom":  "Chapdeuil",
+        "code":  "24105",
+        "codesPostaux":  [
+                             "24320"
+                         ]
+    },
+    {
+        "nom":  "La Chapelle-Aubareil",
+        "code":  "24106",
+        "codesPostaux":  [
+                             "24290"
+                         ]
+    },
+    {
+        "nom":  "La Chapelle-Faucher",
+        "code":  "24107",
+        "codesPostaux":  [
+                             "24530"
+                         ]
+    },
+    {
+        "nom":  "La Chapelle-Gonaguet",
+        "code":  "24108",
+        "codesPostaux":  [
+                             "24350"
+                         ]
+    },
+    {
+        "nom":  "La Chapelle-Grésignac",
+        "code":  "24109",
+        "codesPostaux":  [
+                             "24320"
+                         ]
+    },
+    {
+        "nom":  "La Chapelle-Montabourlet",
+        "code":  "24110",
+        "codesPostaux":  [
+                             "24320"
+                         ]
+    },
+    {
+        "nom":  "La Chapelle-Montmoreau",
+        "code":  "24111",
+        "codesPostaux":  [
+                             "24300"
+                         ]
+    },
+    {
+        "nom":  "La Chapelle-Saint-Jean",
+        "code":  "24113",
+        "codesPostaux":  [
+                             "24390"
+                         ]
+    },
+    {
+        "nom":  "Chassaignes",
+        "code":  "24114",
+        "codesPostaux":  [
+                             "24600"
+                         ]
+    },
+    {
+        "nom":  "Château-l\u0027Évêque",
+        "code":  "24115",
+        "codesPostaux":  [
+                             "24460"
+                         ]
+    },
+    {
+        "nom":  "Châtres",
+        "code":  "24116",
+        "codesPostaux":  [
+                             "24120"
+                         ]
+    },
+    {
+        "nom":  "Les Coteaux Périgourdins",
+        "code":  "24117",
+        "codesPostaux":  [
+                             "24120"
+                         ]
+    },
+    {
+        "nom":  "Cherval",
+        "code":  "24119",
+        "codesPostaux":  [
+                             "24320"
+                         ]
+    },
+    {
+        "nom":  "Cherveix-Cubas",
+        "code":  "24120",
+        "codesPostaux":  [
+                             "24390"
+                         ]
+    },
+    {
+        "nom":  "Chourgnac",
+        "code":  "24121",
+        "codesPostaux":  [
+                             "24640"
+                         ]
+    },
+    {
+        "nom":  "Cladech",
+        "code":  "24122",
+        "codesPostaux":  [
+                             "24170"
+                         ]
+    },
+    {
+        "nom":  "Clermont-de-Beauregard",
+        "code":  "24123",
+        "codesPostaux":  [
+                             "24140"
+                         ]
+    },
+    {
+        "nom":  "Clermont-d\u0027Excideuil",
+        "code":  "24124",
+        "codesPostaux":  [
+                             "24160"
+                         ]
+    },
+    {
+        "nom":  "Colombier",
+        "code":  "24126",
+        "codesPostaux":  [
+                             "24560"
+                         ]
+    },
+    {
+        "nom":  "Comberanche-et-Épeluche",
+        "code":  "24128",
+        "codesPostaux":  [
+                             "24600"
+                         ]
+    },
+    {
+        "nom":  "Condat-sur-Trincou",
+        "code":  "24129",
+        "codesPostaux":  [
+                             "24530"
+                         ]
+    },
+    {
+        "nom":  "Condat-sur-Vézère",
+        "code":  "24130",
+        "codesPostaux":  [
+                             "24570"
+                         ]
+    },
+    {
+        "nom":  "Connezac",
+        "code":  "24131",
+        "codesPostaux":  [
+                             "24300"
+                         ]
+    },
+    {
+        "nom":  "Conne-de-Labarde",
+        "code":  "24132",
+        "codesPostaux":  [
+                             "24560"
+                         ]
+    },
+    {
+        "nom":  "La Coquille",
+        "code":  "24133",
+        "codesPostaux":  [
+                             "24450"
+                         ]
+    },
+    {
+        "nom":  "Corgnac-sur-l\u0027Isle",
+        "code":  "24134",
+        "codesPostaux":  [
+                             "24800"
+                         ]
+    },
+    {
+        "nom":  "Cornille",
+        "code":  "24135",
+        "codesPostaux":  [
+                             "24750"
+                         ]
+    },
+    {
+        "nom":  "Coubjours",
+        "code":  "24136",
+        "codesPostaux":  [
+                             "24390"
+                         ]
+    },
+    {
+        "nom":  "Coulaures",
+        "code":  "24137",
+        "codesPostaux":  [
+                             "24420"
+                         ]
+    },
+    {
+        "nom":  "Coulounieix-Chamiers",
+        "code":  "24138",
+        "codesPostaux":  [
+                             "24660"
+                         ]
+    },
+    {
+        "nom":  "Coursac",
+        "code":  "24139",
+        "codesPostaux":  [
+                             "24430"
+                         ]
+    },
+    {
+        "nom":  "Cours-de-Pile",
+        "code":  "24140",
+        "codesPostaux":  [
+                             "24520"
+                         ]
+    },
+    {
+        "nom":  "Coutures",
+        "code":  "24141",
+        "codesPostaux":  [
+                             "24320"
+                         ]
+    },
+    {
+        "nom":  "Coux et Bigaroque-Mouzens",
+        "code":  "24142",
+        "codesPostaux":  [
+                             "24220"
+                         ]
+    },
+    {
+        "nom":  "Couze-et-Saint-Front",
+        "code":  "24143",
+        "codesPostaux":  [
+                             "24150"
+                         ]
+    },
+    {
+        "nom":  "Creyssac",
+        "code":  "24144",
+        "codesPostaux":  [
+                             "24350"
+                         ]
+    },
+    {
+        "nom":  "Creysse",
+        "code":  "24145",
+        "codesPostaux":  [
+                             "24100"
+                         ]
+    },
+    {
+        "nom":  "Creyssensac-et-Pissot",
+        "code":  "24146",
+        "codesPostaux":  [
+                             "24380"
+                         ]
+    },
+    {
+        "nom":  "Cubjac-Auvézère-Val d\u0027Ans",
+        "code":  "24147",
+        "codesPostaux":  [
+                             "24640"
+                         ]
+    },
+    {
+        "nom":  "Cunèges",
+        "code":  "24148",
+        "codesPostaux":  [
+                             "24240"
+                         ]
+    },
+    {
+        "nom":  "Daglan",
+        "code":  "24150",
+        "codesPostaux":  [
+                             "24250"
+                         ]
+    },
+    {
+        "nom":  "Doissat",
+        "code":  "24151",
+        "codesPostaux":  [
+                             "24170"
+                         ]
+    },
+    {
+        "nom":  "Domme",
+        "code":  "24152",
+        "codesPostaux":  [
+                             "24250"
+                         ]
+    },
+    {
+        "nom":  "La Dornac",
+        "code":  "24153",
+        "codesPostaux":  [
+                             "24120"
+                         ]
+    },
+    {
+        "nom":  "Douchapt",
+        "code":  "24154",
+        "codesPostaux":  [
+                             "24350"
+                         ]
+    },
+    {
+        "nom":  "Douville",
+        "code":  "24155",
+        "codesPostaux":  [
+                             "24140"
+                         ]
+    },
+    {
+        "nom":  "La Douze",
+        "code":  "24156",
+        "codesPostaux":  [
+                             "24330"
+                         ]
+    },
+    {
+        "nom":  "Douzillac",
+        "code":  "24157",
+        "codesPostaux":  [
+                             "24190"
+                         ]
+    },
+    {
+        "nom":  "Dussac",
+        "code":  "24158",
+        "codesPostaux":  [
+                             "24270"
+                         ]
+    },
+    {
+        "nom":  "Échourgnac",
+        "code":  "24159",
+        "codesPostaux":  [
+                             "24410"
+                         ]
+    },
+    {
+        "nom":  "Église-Neuve-de-Vergt",
+        "code":  "24160",
+        "codesPostaux":  [
+                             "24380"
+                         ]
+    },
+    {
+        "nom":  "Église-Neuve-d\u0027Issac",
+        "code":  "24161",
+        "codesPostaux":  [
+                             "24400"
+                         ]
+    },
+    {
+        "nom":  "Escoire",
+        "code":  "24162",
+        "codesPostaux":  [
+                             "24420"
+                         ]
+    },
+    {
+        "nom":  "Étouars",
+        "code":  "24163",
+        "codesPostaux":  [
+                             "24360"
+                         ]
+    },
+    {
+        "nom":  "Excideuil",
+        "code":  "24164",
+        "codesPostaux":  [
+                             "24160"
+                         ]
+    },
+    {
+        "nom":  "Eygurande-et-Gardedeuil",
+        "code":  "24165",
+        "codesPostaux":  [
+                             "24700"
+                         ]
+    },
+    {
+        "nom":  "Eymet",
+        "code":  "24167",
+        "codesPostaux":  [
+                             "24500"
+                         ]
+    },
+    {
+        "nom":  "Plaisance",
+        "code":  "24168",
+        "codesPostaux":  [
+                             "24560"
+                         ]
+    },
+    {
+        "nom":  "Eyzerac",
+        "code":  "24171",
+        "codesPostaux":  [
+                             "24800"
+                         ]
+    },
+    {
+        "nom":  "Les Eyzies",
+        "code":  "24172",
+        "codesPostaux":  [
+                             "24260",
+                             "24620"
+                         ]
+    },
+    {
+        "nom":  "Fanlac",
+        "code":  "24174",
+        "codesPostaux":  [
+                             "24290"
+                         ]
+    },
+    {
+        "nom":  "Les Farges",
+        "code":  "24175",
+        "codesPostaux":  [
+                             "24290"
+                         ]
+    },
+    {
+        "nom":  "Faurilles",
+        "code":  "24176",
+        "codesPostaux":  [
+                             "24560"
+                         ]
+    },
+    {
+        "nom":  "Faux-en-Périgord",
+        "code":  "24177",
+        "codesPostaux":  [
+                             "24560"
+                         ]
+    },
+    {
+        "nom":  "La Feuillade",
+        "code":  "24179",
+        "codesPostaux":  [
+                             "24120"
+                         ]
+    },
+    {
+        "nom":  "Firbeix",
+        "code":  "24180",
+        "codesPostaux":  [
+                             "24450"
+                         ]
+    },
+    {
+        "nom":  "Le Fleix",
+        "code":  "24182",
+        "codesPostaux":  [
+                             "24130"
+                         ]
+    },
+    {
+        "nom":  "Fleurac",
+        "code":  "24183",
+        "codesPostaux":  [
+                             "24580"
+                         ]
+    },
+    {
+        "nom":  "Florimont-Gaumier",
+        "code":  "24184",
+        "codesPostaux":  [
+                             "24250"
+                         ]
+    },
+    {
+        "nom":  "Fonroque",
+        "code":  "24186",
+        "codesPostaux":  [
+                             "24500"
+                         ]
+    },
+    {
+        "nom":  "Fossemagne",
+        "code":  "24188",
+        "codesPostaux":  [
+                             "24210"
+                         ]
+    },
+    {
+        "nom":  "Fougueyrolles",
+        "code":  "24189",
+        "codesPostaux":  [
+                             "33220"
+                         ]
+    },
+    {
+        "nom":  "Fouleix",
+        "code":  "24190",
+        "codesPostaux":  [
+                             "24380"
+                         ]
+    },
+    {
+        "nom":  "Fraisse",
+        "code":  "24191",
+        "codesPostaux":  [
+                             "24130"
+                         ]
+    },
+    {
+        "nom":  "Gabillou",
+        "code":  "24192",
+        "codesPostaux":  [
+                             "24210"
+                         ]
+    },
+    {
+        "nom":  "Gageac-et-Rouillac",
+        "code":  "24193",
+        "codesPostaux":  [
+                             "24240"
+                         ]
+    },
+    {
+        "nom":  "Gardonne",
+        "code":  "24194",
+        "codesPostaux":  [
+                             "24680"
+                         ]
+    },
+    {
+        "nom":  "Gaugeac",
+        "code":  "24195",
+        "codesPostaux":  [
+                             "24540"
+                         ]
+    },
+    {
+        "nom":  "Génis",
+        "code":  "24196",
+        "codesPostaux":  [
+                             "24160"
+                         ]
+    },
+    {
+        "nom":  "Ginestet",
+        "code":  "24197",
+        "codesPostaux":  [
+                             "24130"
+                         ]
+    },
+    {
+        "nom":  "Gout-Rossignol",
+        "code":  "24199",
+        "codesPostaux":  [
+                             "24320"
+                         ]
+    },
+    {
+        "nom":  "Grand-Brassac",
+        "code":  "24200",
+        "codesPostaux":  [
+                             "24350"
+                         ]
+    },
+    {
+        "nom":  "Granges-d\u0027Ans",
+        "code":  "24202",
+        "codesPostaux":  [
+                             "24390"
+                         ]
+    },
+    {
+        "nom":  "Grignols",
+        "code":  "24205",
+        "codesPostaux":  [
+                             "24110"
+                         ]
+    },
+    {
+        "nom":  "Grives",
+        "code":  "24206",
+        "codesPostaux":  [
+                             "24170"
+                         ]
+    },
+    {
+        "nom":  "Groléjac",
+        "code":  "24207",
+        "codesPostaux":  [
+                             "24250"
+                         ]
+    },
+    {
+        "nom":  "Grun-Bordas",
+        "code":  "24208",
+        "codesPostaux":  [
+                             "24380"
+                         ]
+    },
+    {
+        "nom":  "Hautefaye",
+        "code":  "24209",
+        "codesPostaux":  [
+                             "24300"
+                         ]
+    },
+    {
+        "nom":  "Hautefort",
+        "code":  "24210",
+        "codesPostaux":  [
+                             "24390"
+                         ]
+    },
+    {
+        "nom":  "Issac",
+        "code":  "24211",
+        "codesPostaux":  [
+                             "24400"
+                         ]
+    },
+    {
+        "nom":  "Issigeac",
+        "code":  "24212",
+        "codesPostaux":  [
+                             "24560"
+                         ]
+    },
+    {
+        "nom":  "Jaure",
+        "code":  "24213",
+        "codesPostaux":  [
+                             "24140"
+                         ]
+    },
+    {
+        "nom":  "Javerlhac-et-la-Chapelle-Saint-Robert",
+        "code":  "24214",
+        "codesPostaux":  [
+                             "24300"
+                         ]
+    },
+    {
+        "nom":  "Jayac",
+        "code":  "24215",
+        "codesPostaux":  [
+                             "24590"
+                         ]
+    },
+    {
+        "nom":  "La Jemaye-Ponteyraud",
+        "code":  "24216",
+        "codesPostaux":  [
+                             "24410"
+                         ]
+    },
+    {
+        "nom":  "Journiac",
+        "code":  "24217",
+        "codesPostaux":  [
+                             "24260"
+                         ]
+    },
+    {
+        "nom":  "Jumilhac-le-Grand",
+        "code":  "24218",
+        "codesPostaux":  [
+                             "24630"
+                         ]
+    },
+    {
+        "nom":  "Lacropte",
+        "code":  "24220",
+        "codesPostaux":  [
+                             "24380"
+                         ]
+    },
+    {
+        "nom":  "Rudeau-Ladosse",
+        "code":  "24221",
+        "codesPostaux":  [
+                             "24340"
+                         ]
+    },
+    {
+        "nom":  "La Force",
+        "code":  "24222",
+        "codesPostaux":  [
+                             "24130"
+                         ]
+    },
+    {
+        "nom":  "Lalinde",
+        "code":  "24223",
+        "codesPostaux":  [
+                             "24150"
+                         ]
+    },
+    {
+        "nom":  "Lamonzie-Montastruc",
+        "code":  "24224",
+        "codesPostaux":  [
+                             "24520"
+                         ]
+    },
+    {
+        "nom":  "Lamonzie-Saint-Martin",
+        "code":  "24225",
+        "codesPostaux":  [
+                             "24680"
+                         ]
+    },
+    {
+        "nom":  "Lamothe-Montravel",
+        "code":  "24226",
+        "codesPostaux":  [
+                             "24230"
+                         ]
+    },
+    {
+        "nom":  "Lanouaille",
+        "code":  "24227",
+        "codesPostaux":  [
+                             "24270"
+                         ]
+    },
+    {
+        "nom":  "Lanquais",
+        "code":  "24228",
+        "codesPostaux":  [
+                             "24150"
+                         ]
+    },
+    {
+        "nom":  "Le Lardin-Saint-Lazare",
+        "code":  "24229",
+        "codesPostaux":  [
+                             "24570"
+                         ]
+    },
+    {
+        "nom":  "Larzac",
+        "code":  "24230",
+        "codesPostaux":  [
+                             "24170"
+                         ]
+    },
+    {
+        "nom":  "Lavalade",
+        "code":  "24231",
+        "codesPostaux":  [
+                             "24540"
+                         ]
+    },
+    {
+        "nom":  "Lavaur",
+        "code":  "24232",
+        "codesPostaux":  [
+                             "24550"
+                         ]
+    },
+    {
+        "nom":  "Les Lèches",
+        "code":  "24234",
+        "codesPostaux":  [
+                             "24400"
+                         ]
+    },
+    {
+        "nom":  "Léguillac-de-l\u0027Auche",
+        "code":  "24236",
+        "codesPostaux":  [
+                             "24110"
+                         ]
+    },
+    {
+        "nom":  "Lembras",
+        "code":  "24237",
+        "codesPostaux":  [
+                             "24100"
+                         ]
+    },
+    {
+        "nom":  "Lempzours",
+        "code":  "24238",
+        "codesPostaux":  [
+                             "24800"
+                         ]
+    },
+    {
+        "nom":  "Limeuil",
+        "code":  "24240",
+        "codesPostaux":  [
+                             "24510"
+                         ]
+    },
+    {
+        "nom":  "Limeyrat",
+        "code":  "24241",
+        "codesPostaux":  [
+                             "24210"
+                         ]
+    },
+    {
+        "nom":  "Liorac-sur-Louyre",
+        "code":  "24242",
+        "codesPostaux":  [
+                             "24520"
+                         ]
+    },
+    {
+        "nom":  "Lisle",
+        "code":  "24243",
+        "codesPostaux":  [
+                             "24350"
+                         ]
+    },
+    {
+        "nom":  "Lolme",
+        "code":  "24244",
+        "codesPostaux":  [
+                             "24540"
+                         ]
+    },
+    {
+        "nom":  "Loubejac",
+        "code":  "24245",
+        "codesPostaux":  [
+                             "24550"
+                         ]
+    },
+    {
+        "nom":  "Lunas",
+        "code":  "24246",
+        "codesPostaux":  [
+                             "24130"
+                         ]
+    },
+    {
+        "nom":  "Lusignac",
+        "code":  "24247",
+        "codesPostaux":  [
+                             "24320"
+                         ]
+    },
+    {
+        "nom":  "Lussas-et-Nontronneau",
+        "code":  "24248",
+        "codesPostaux":  [
+                             "24300"
+                         ]
+    },
+    {
+        "nom":  "Manzac-sur-Vern",
+        "code":  "24251",
+        "codesPostaux":  [
+                             "24110"
+                         ]
+    },
+    {
+        "nom":  "Marcillac-Saint-Quentin",
+        "code":  "24252",
+        "codesPostaux":  [
+                             "24200"
+                         ]
+    },
+    {
+        "nom":  "Mareuil en Périgord",
+        "code":  "24253",
+        "codesPostaux":  [
+                             "24340"
+                         ]
+    },
+    {
+        "nom":  "Marnac",
+        "code":  "24254",
+        "codesPostaux":  [
+                             "24220"
+                         ]
+    },
+    {
+        "nom":  "Marquay",
+        "code":  "24255",
+        "codesPostaux":  [
+                             "24620"
+                         ]
+    },
+    {
+        "nom":  "Marsac-sur-l\u0027Isle",
+        "code":  "24256",
+        "codesPostaux":  [
+                             "24430"
+                         ]
+    },
+    {
+        "nom":  "Marsalès",
+        "code":  "24257",
+        "codesPostaux":  [
+                             "24540"
+                         ]
+    },
+    {
+        "nom":  "Eyraud-Crempse-Maurens",
+        "code":  "24259",
+        "codesPostaux":  [
+                             "24130",
+                             "24140"
+                         ]
+    },
+    {
+        "nom":  "Mauzac-et-Grand-Castang",
+        "code":  "24260",
+        "codesPostaux":  [
+                             "24150"
+                         ]
+    },
+    {
+        "nom":  "Mauzens-et-Miremont",
+        "code":  "24261",
+        "codesPostaux":  [
+                             "24260"
+                         ]
+    },
+    {
+        "nom":  "Mayac",
+        "code":  "24262",
+        "codesPostaux":  [
+                             "24420"
+                         ]
+    },
+    {
+        "nom":  "Mazeyrolles",
+        "code":  "24263",
+        "codesPostaux":  [
+                             "24550"
+                         ]
+    },
+    {
+        "nom":  "Ménesplet",
+        "code":  "24264",
+        "codesPostaux":  [
+                             "24700"
+                         ]
+    },
+    {
+        "nom":  "Mensignac",
+        "code":  "24266",
+        "codesPostaux":  [
+                             "24350"
+                         ]
+    },
+    {
+        "nom":  "Mescoules",
+        "code":  "24267",
+        "codesPostaux":  [
+                             "24240"
+                         ]
+    },
+    {
+        "nom":  "Meyrals",
+        "code":  "24268",
+        "codesPostaux":  [
+                             "24220"
+                         ]
+    },
+    {
+        "nom":  "Mialet",
+        "code":  "24269",
+        "codesPostaux":  [
+                             "24450"
+                         ]
+    },
+    {
+        "nom":  "Milhac-de-Nontron",
+        "code":  "24271",
+        "codesPostaux":  [
+                             "24470"
+                         ]
+    },
+    {
+        "nom":  "Minzac",
+        "code":  "24272",
+        "codesPostaux":  [
+                             "24610"
+                         ]
+    },
+    {
+        "nom":  "Molières",
+        "code":  "24273",
+        "codesPostaux":  [
+                             "24480"
+                         ]
+    },
+    {
+        "nom":  "Monbazillac",
+        "code":  "24274",
+        "codesPostaux":  [
+                             "24240"
+                         ]
+    },
+    {
+        "nom":  "Monestier",
+        "code":  "24276",
+        "codesPostaux":  [
+                             "24240"
+                         ]
+    },
+    {
+        "nom":  "Monfaucon",
+        "code":  "24277",
+        "codesPostaux":  [
+                             "24130"
+                         ]
+    },
+    {
+        "nom":  "Monmadalès",
+        "code":  "24278",
+        "codesPostaux":  [
+                             "24560"
+                         ]
+    },
+    {
+        "nom":  "Monmarvès",
+        "code":  "24279",
+        "codesPostaux":  [
+                             "24560"
+                         ]
+    },
+    {
+        "nom":  "Monpazier",
+        "code":  "24280",
+        "codesPostaux":  [
+                             "24540"
+                         ]
+    },
+    {
+        "nom":  "Monsac",
+        "code":  "24281",
+        "codesPostaux":  [
+                             "24440"
+                         ]
+    },
+    {
+        "nom":  "Monsaguel",
+        "code":  "24282",
+        "codesPostaux":  [
+                             "24560"
+                         ]
+    },
+    {
+        "nom":  "Montagnac-d\u0027Auberoche",
+        "code":  "24284",
+        "codesPostaux":  [
+                             "24210"
+                         ]
+    },
+    {
+        "nom":  "Montagnac-la-Crempse",
+        "code":  "24285",
+        "codesPostaux":  [
+                             "24140"
+                         ]
+    },
+    {
+        "nom":  "Montagrier",
+        "code":  "24286",
+        "codesPostaux":  [
+                             "24350"
+                         ]
+    },
+    {
+        "nom":  "Montaut",
+        "code":  "24287",
+        "codesPostaux":  [
+                             "24560"
+                         ]
+    },
+    {
+        "nom":  "Montazeau",
+        "code":  "24288",
+        "codesPostaux":  [
+                             "24230"
+                         ]
+    },
+    {
+        "nom":  "Montcaret",
+        "code":  "24289",
+        "codesPostaux":  [
+                             "24230"
+                         ]
+    },
+    {
+        "nom":  "Montferrand-du-Périgord",
+        "code":  "24290",
+        "codesPostaux":  [
+                             "24440"
+                         ]
+    },
+    {
+        "nom":  "Montignac-Lascaux",
+        "code":  "24291",
+        "codesPostaux":  [
+                             "24290"
+                         ]
+    },
+    {
+        "nom":  "Montpeyroux",
+        "code":  "24292",
+        "codesPostaux":  [
+                             "24610"
+                         ]
+    },
+    {
+        "nom":  "Monplaisant",
+        "code":  "24293",
+        "codesPostaux":  [
+                             "24170"
+                         ]
+    },
+    {
+        "nom":  "Montpon-Ménestérol",
+        "code":  "24294",
+        "codesPostaux":  [
+                             "24700"
+                         ]
+    },
+    {
+        "nom":  "Montrem",
+        "code":  "24295",
+        "codesPostaux":  [
+                             "24110"
+                         ]
+    },
+    {
+        "nom":  "Mouleydier",
+        "code":  "24296",
+        "codesPostaux":  [
+                             "24520"
+                         ]
+    },
+    {
+        "nom":  "Moulin-Neuf",
+        "code":  "24297",
+        "codesPostaux":  [
+                             "24700"
+                         ]
+    },
+    {
+        "nom":  "Mussidan",
+        "code":  "24299",
+        "codesPostaux":  [
+                             "24400"
+                         ]
+    },
+    {
+        "nom":  "Nabirat",
+        "code":  "24300",
+        "codesPostaux":  [
+                             "24250"
+                         ]
+    },
+    {
+        "nom":  "Nadaillac",
+        "code":  "24301",
+        "codesPostaux":  [
+                             "24590"
+                         ]
+    },
+    {
+        "nom":  "Nailhac",
+        "code":  "24302",
+        "codesPostaux":  [
+                             "24390"
+                         ]
+    },
+    {
+        "nom":  "Nanteuil-Auriac-de-Bourzac",
+        "code":  "24303",
+        "codesPostaux":  [
+                             "24320"
+                         ]
+    },
+    {
+        "nom":  "Nantheuil",
+        "code":  "24304",
+        "codesPostaux":  [
+                             "24800"
+                         ]
+    },
+    {
+        "nom":  "Nanthiat",
+        "code":  "24305",
+        "codesPostaux":  [
+                             "24800"
+                         ]
+    },
+    {
+        "nom":  "Nastringues",
+        "code":  "24306",
+        "codesPostaux":  [
+                             "24230"
+                         ]
+    },
+    {
+        "nom":  "Naussannes",
+        "code":  "24307",
+        "codesPostaux":  [
+                             "24440"
+                         ]
+    },
+    {
+        "nom":  "Négrondes",
+        "code":  "24308",
+        "codesPostaux":  [
+                             "24460"
+                         ]
+    },
+    {
+        "nom":  "Neuvic",
+        "code":  "24309",
+        "codesPostaux":  [
+                             "24190"
+                         ]
+    },
+    {
+        "nom":  "Nontron",
+        "code":  "24311",
+        "codesPostaux":  [
+                             "24300"
+                         ]
+    },
+    {
+        "nom":  "Sanilhac",
+        "code":  "24312",
+        "codesPostaux":  [
+                             "24380",
+                             "24660",
+                             "24750"
+                         ]
+    },
+    {
+        "nom":  "Orliac",
+        "code":  "24313",
+        "codesPostaux":  [
+                             "24170"
+                         ]
+    },
+    {
+        "nom":  "Parcoul-Chenaud",
+        "code":  "24316",
+        "codesPostaux":  [
+                             "24410"
+                         ]
+    },
+    {
+        "nom":  "Paulin",
+        "code":  "24317",
+        "codesPostaux":  [
+                             "24590"
+                         ]
+    },
+    {
+        "nom":  "Paunat",
+        "code":  "24318",
+        "codesPostaux":  [
+                             "24510"
+                         ]
+    },
+    {
+        "nom":  "Paussac-et-Saint-Vivien",
+        "code":  "24319",
+        "codesPostaux":  [
+                             "24310"
+                         ]
+    },
+    {
+        "nom":  "Payzac",
+        "code":  "24320",
+        "codesPostaux":  [
+                             "24270"
+                         ]
+    },
+    {
+        "nom":  "Pazayac",
+        "code":  "24321",
+        "codesPostaux":  [
+                             "24120"
+                         ]
+    },
+    {
+        "nom":  "Périgueux",
+        "code":  "24322",
+        "codesPostaux":  [
+                             "24000"
+                         ]
+    },
+    {
+        "nom":  "Petit-Bersac",
+        "code":  "24323",
+        "codesPostaux":  [
+                             "24600"
+                         ]
+    },
+    {
+        "nom":  "Peyrignac",
+        "code":  "24324",
+        "codesPostaux":  [
+                             "24210"
+                         ]
+    },
+    {
+        "nom":  "Pechs-de-l\u0027Espérance",
+        "code":  "24325",
+        "codesPostaux":  [
+                             "24370"
+                         ]
+    },
+    {
+        "nom":  "Peyzac-le-Moustier",
+        "code":  "24326",
+        "codesPostaux":  [
+                             "24620"
+                         ]
+    },
+    {
+        "nom":  "Pezuls",
+        "code":  "24327",
+        "codesPostaux":  [
+                             "24510"
+                         ]
+    },
+    {
+        "nom":  "Piégut-Pluviers",
+        "code":  "24328",
+        "codesPostaux":  [
+                             "24360"
+                         ]
+    },
+    {
+        "nom":  "Le Pizou",
+        "code":  "24329",
+        "codesPostaux":  [
+                             "24700"
+                         ]
+    },
+    {
+        "nom":  "Plazac",
+        "code":  "24330",
+        "codesPostaux":  [
+                             "24580"
+                         ]
+    },
+    {
+        "nom":  "Pomport",
+        "code":  "24331",
+        "codesPostaux":  [
+                             "24240"
+                         ]
+    },
+    {
+        "nom":  "Pontours",
+        "code":  "24334",
+        "codesPostaux":  [
+                             "24150"
+                         ]
+    },
+    {
+        "nom":  "Port-Sainte-Foy-et-Ponchapt",
+        "code":  "24335",
+        "codesPostaux":  [
+                             "33220"
+                         ]
+    },
+    {
+        "nom":  "Prats-de-Carlux",
+        "code":  "24336",
+        "codesPostaux":  [
+                             "24370"
+                         ]
+    },
+    {
+        "nom":  "Prats-du-Périgord",
+        "code":  "24337",
+        "codesPostaux":  [
+                             "24550"
+                         ]
+    },
+    {
+        "nom":  "Pressignac-Vicq",
+        "code":  "24338",
+        "codesPostaux":  [
+                             "24150"
+                         ]
+    },
+    {
+        "nom":  "Preyssac-d\u0027Excideuil",
+        "code":  "24339",
+        "codesPostaux":  [
+                             "24160"
+                         ]
+    },
+    {
+        "nom":  "Prigonrieux",
+        "code":  "24340",
+        "codesPostaux":  [
+                             "24130"
+                         ]
+    },
+    {
+        "nom":  "Proissans",
+        "code":  "24341",
+        "codesPostaux":  [
+                             "24200"
+                         ]
+    },
+    {
+        "nom":  "Queyssac",
+        "code":  "24345",
+        "codesPostaux":  [
+                             "24140"
+                         ]
+    },
+    {
+        "nom":  "Quinsac",
+        "code":  "24346",
+        "codesPostaux":  [
+                             "24530"
+                         ]
+    },
+    {
+        "nom":  "Rampieux",
+        "code":  "24347",
+        "codesPostaux":  [
+                             "24440"
+                         ]
+    },
+    {
+        "nom":  "Razac-d\u0027Eymet",
+        "code":  "24348",
+        "codesPostaux":  [
+                             "24500"
+                         ]
+    },
+    {
+        "nom":  "Razac-de-Saussignac",
+        "code":  "24349",
+        "codesPostaux":  [
+                             "24240"
+                         ]
+    },
+    {
+        "nom":  "Razac-sur-l\u0027Isle",
+        "code":  "24350",
+        "codesPostaux":  [
+                             "24430"
+                         ]
+    },
+    {
+        "nom":  "Ribagnac",
+        "code":  "24351",
+        "codesPostaux":  [
+                             "24240"
+                         ]
+    },
+    {
+        "nom":  "Ribérac",
+        "code":  "24352",
+        "codesPostaux":  [
+                             "24600"
+                         ]
+    },
+    {
+        "nom":  "La Rochebeaucourt-et-Argentine",
+        "code":  "24353",
+        "codesPostaux":  [
+                             "24340"
+                         ]
+    },
+    {
+        "nom":  "La Roche-Chalais",
+        "code":  "24354",
+        "codesPostaux":  [
+                             "24490"
+                         ]
+    },
+    {
+        "nom":  "La Roque-Gageac",
+        "code":  "24355",
+        "codesPostaux":  [
+                             "24250"
+                         ]
+    },
+    {
+        "nom":  "Rouffignac-Saint-Cernin-de-Reilhac",
+        "code":  "24356",
+        "codesPostaux":  [
+                             "24580"
+                         ]
+    },
+    {
+        "nom":  "Rouffignac-de-Sigoulès",
+        "code":  "24357",
+        "codesPostaux":  [
+                             "24240"
+                         ]
+    },
+    {
+        "nom":  "Sadillac",
+        "code":  "24359",
+        "codesPostaux":  [
+                             "24500"
+                         ]
+    },
+    {
+        "nom":  "Sagelat",
+        "code":  "24360",
+        "codesPostaux":  [
+                             "24170"
+                         ]
+    },
+    {
+        "nom":  "Saint-Agne",
+        "code":  "24361",
+        "codesPostaux":  [
+                             "24520"
+                         ]
+    },
+    {
+        "nom":  "Val de Louyre et Caudeau",
+        "code":  "24362",
+        "codesPostaux":  [
+                             "24380",
+                             "24510"
+                         ]
+    },
+    {
+        "nom":  "Coly-Saint-Amand",
+        "code":  "24364",
+        "codesPostaux":  [
+                             "24120",
+                             "24290"
+                         ]
+    },
+    {
+        "nom":  "Saint-Amand-de-Vergt",
+        "code":  "24365",
+        "codesPostaux":  [
+                             "24380"
+                         ]
+    },
+    {
+        "nom":  "Saint-André-d\u0027Allas",
+        "code":  "24366",
+        "codesPostaux":  [
+                             "24200"
+                         ]
+    },
+    {
+        "nom":  "Saint-André-de-Double",
+        "code":  "24367",
+        "codesPostaux":  [
+                             "24190"
+                         ]
+    },
+    {
+        "nom":  "Saint-Antoine-de-Breuilh",
+        "code":  "24370",
+        "codesPostaux":  [
+                             "24230"
+                         ]
+    },
+    {
+        "nom":  "Saint-Aquilin",
+        "code":  "24371",
+        "codesPostaux":  [
+                             "24110"
+                         ]
+    },
+    {
+        "nom":  "Saint-Astier",
+        "code":  "24372",
+        "codesPostaux":  [
+                             "24110"
+                         ]
+    },
+    {
+        "nom":  "Saint-Aubin-de-Cadelech",
+        "code":  "24373",
+        "codesPostaux":  [
+                             "24500"
+                         ]
+    },
+    {
+        "nom":  "Saint-Aubin-de-Lanquais",
+        "code":  "24374",
+        "codesPostaux":  [
+                             "24560"
+                         ]
+    },
+    {
+        "nom":  "Saint-Aubin-de-Nabirat",
+        "code":  "24375",
+        "codesPostaux":  [
+                             "24250"
+                         ]
+    },
+    {
+        "nom":  "Saint Aulaye-Puymangou",
+        "code":  "24376",
+        "codesPostaux":  [
+                             "24410"
+                         ]
+    },
+    {
+        "nom":  "Saint-Avit-de-Vialard",
+        "code":  "24377",
+        "codesPostaux":  [
+                             "24260"
+                         ]
+    },
+    {
+        "nom":  "Saint-Avit-Rivière",
+        "code":  "24378",
+        "codesPostaux":  [
+                             "24540"
+                         ]
+    },
+    {
+        "nom":  "Saint-Avit-Sénieur",
+        "code":  "24379",
+        "codesPostaux":  [
+                             "24440"
+                         ]
+    },
+    {
+        "nom":  "Saint-Barthélemy-de-Bellegarde",
+        "code":  "24380",
+        "codesPostaux":  [
+                             "24700"
+                         ]
+    },
+    {
+        "nom":  "Saint-Barthélemy-de-Bussière",
+        "code":  "24381",
+        "codesPostaux":  [
+                             "24360"
+                         ]
+    },
+    {
+        "nom":  "Saint-Capraise-de-Lalinde",
+        "code":  "24382",
+        "codesPostaux":  [
+                             "24150"
+                         ]
+    },
+    {
+        "nom":  "Saint-Capraise-d\u0027Eymet",
+        "code":  "24383",
+        "codesPostaux":  [
+                             "24500"
+                         ]
+    },
+    {
+        "nom":  "Saint-Cassien",
+        "code":  "24384",
+        "codesPostaux":  [
+                             "24540"
+                         ]
+    },
+    {
+        "nom":  "Saint-Cernin-de-Labarde",
+        "code":  "24385",
+        "codesPostaux":  [
+                             "24560"
+                         ]
+    },
+    {
+        "nom":  "Saint-Cernin-de-l\u0027Herm",
+        "code":  "24386",
+        "codesPostaux":  [
+                             "24550"
+                         ]
+    },
+    {
+        "nom":  "Saint-Chamassy",
+        "code":  "24388",
+        "codesPostaux":  [
+                             "24260"
+                         ]
+    },
+    {
+        "nom":  "Saint-Crépin-d\u0027Auberoche",
+        "code":  "24390",
+        "codesPostaux":  [
+                             "24330"
+                         ]
+    },
+    {
+        "nom":  "Saint-Crépin-et-Carlucet",
+        "code":  "24392",
+        "codesPostaux":  [
+                             "24590"
+                         ]
+    },
+    {
+        "nom":  "Sainte-Croix",
+        "code":  "24393",
+        "codesPostaux":  [
+                             "24440"
+                         ]
+    },
+    {
+        "nom":  "Sainte-Croix-de-Mareuil",
+        "code":  "24394",
+        "codesPostaux":  [
+                             "24340"
+                         ]
+    },
+    {
+        "nom":  "Saint-Cybranet",
+        "code":  "24395",
+        "codesPostaux":  [
+                             "24250"
+                         ]
+    },
+    {
+        "nom":  "Saint-Cyprien",
+        "code":  "24396",
+        "codesPostaux":  [
+                             "24220"
+                         ]
+    },
+    {
+        "nom":  "Saint-Cyr-les-Champagnes",
+        "code":  "24397",
+        "codesPostaux":  [
+                             "24270"
+                         ]
+    },
+    {
+        "nom":  "Saint-Estèphe",
+        "code":  "24398",
+        "codesPostaux":  [
+                             "24360"
+                         ]
+    },
+    {
+        "nom":  "Saint-Étienne-de-Puycorbier",
+        "code":  "24399",
+        "codesPostaux":  [
+                             "24400"
+                         ]
+    },
+    {
+        "nom":  "Sainte-Eulalie-d\u0027Ans",
+        "code":  "24401",
+        "codesPostaux":  [
+                             "24640"
+                         ]
+    },
+    {
+        "nom":  "Saint-Félix-de-Bourdeilles",
+        "code":  "24403",
+        "codesPostaux":  [
+                             "24340"
+                         ]
+    },
+    {
+        "nom":  "Saint-Félix-de-Reillac-et-Mortemart",
+        "code":  "24404",
+        "codesPostaux":  [
+                             "24260"
+                         ]
+    },
+    {
+        "nom":  "Saint-Félix-de-Villadeix",
+        "code":  "24405",
+        "codesPostaux":  [
+                             "24510"
+                         ]
+    },
+    {
+        "nom":  "Sainte-Foy-de-Belvès",
+        "code":  "24406",
+        "codesPostaux":  [
+                             "24170"
+                         ]
+    },
+    {
+        "nom":  "Sainte-Foy-de-Longas",
+        "code":  "24407",
+        "codesPostaux":  [
+                             "24510"
+                         ]
+    },
+    {
+        "nom":  "Saint-Front-d\u0027Alemps",
+        "code":  "24408",
+        "codesPostaux":  [
+                             "24460"
+                         ]
+    },
+    {
+        "nom":  "Saint-Front-de-Pradoux",
+        "code":  "24409",
+        "codesPostaux":  [
+                             "24400"
+                         ]
+    },
+    {
+        "nom":  "Saint-Front-la-Rivière",
+        "code":  "24410",
+        "codesPostaux":  [
+                             "24300"
+                         ]
+    },
+    {
+        "nom":  "Saint-Front-sur-Nizonne",
+        "code":  "24411",
+        "codesPostaux":  [
+                             "24300"
+                         ]
+    },
+    {
+        "nom":  "Saint-Geniès",
+        "code":  "24412",
+        "codesPostaux":  [
+                             "24590"
+                         ]
+    },
+    {
+        "nom":  "Saint-Georges-Blancaneix",
+        "code":  "24413",
+        "codesPostaux":  [
+                             "24130"
+                         ]
+    },
+    {
+        "nom":  "Saint-Georges-de-Montclard",
+        "code":  "24414",
+        "codesPostaux":  [
+                             "24140"
+                         ]
+    },
+    {
+        "nom":  "Saint-Géraud-de-Corps",
+        "code":  "24415",
+        "codesPostaux":  [
+                             "24700"
+                         ]
+    },
+    {
+        "nom":  "Saint-Germain-de-Belvès",
+        "code":  "24416",
+        "codesPostaux":  [
+                             "24170"
+                         ]
+    },
+    {
+        "nom":  "Saint-Germain-des-Prés",
+        "code":  "24417",
+        "codesPostaux":  [
+                             "24160"
+                         ]
+    },
+    {
+        "nom":  "Saint-Germain-du-Salembre",
+        "code":  "24418",
+        "codesPostaux":  [
+                             "24190"
+                         ]
+    },
+    {
+        "nom":  "Saint-Germain-et-Mons",
+        "code":  "24419",
+        "codesPostaux":  [
+                             "24520"
+                         ]
+    },
+    {
+        "nom":  "Saint-Géry",
+        "code":  "24420",
+        "codesPostaux":  [
+                             "24400"
+                         ]
+    },
+    {
+        "nom":  "Saint-Geyrac",
+        "code":  "24421",
+        "codesPostaux":  [
+                             "24330"
+                         ]
+    },
+    {
+        "nom":  "Saint-Hilaire-d\u0027Estissac",
+        "code":  "24422",
+        "codesPostaux":  [
+                             "24140"
+                         ]
+    },
+    {
+        "nom":  "Saint-Julien-Innocence-Eulalie",
+        "code":  "24423",
+        "codesPostaux":  [
+                             "24500"
+                         ]
+    },
+    {
+        "nom":  "Saint-Jean-d\u0027Ataux",
+        "code":  "24424",
+        "codesPostaux":  [
+                             "24190"
+                         ]
+    },
+    {
+        "nom":  "Saint-Jean-de-Côle",
+        "code":  "24425",
+        "codesPostaux":  [
+                             "24800"
+                         ]
+    },
+    {
+        "nom":  "Saint-Jean-d\u0027Estissac",
+        "code":  "24426",
+        "codesPostaux":  [
+                             "24140"
+                         ]
+    },
+    {
+        "nom":  "Saint-Jory-de-Chalais",
+        "code":  "24428",
+        "codesPostaux":  [
+                             "24800"
+                         ]
+    },
+    {
+        "nom":  "Saint-Jory-las-Bloux",
+        "code":  "24429",
+        "codesPostaux":  [
+                             "24160"
+                         ]
+    },
+    {
+        "nom":  "Saint-Julien-de-Lampon",
+        "code":  "24432",
+        "codesPostaux":  [
+                             "24370"
+                         ]
+    },
+    {
+        "nom":  "Saint-Just",
+        "code":  "24434",
+        "codesPostaux":  [
+                             "24320"
+                         ]
+    },
+    {
+        "nom":  "Saint-Laurent-des-Hommes",
+        "code":  "24436",
+        "codesPostaux":  [
+                             "24400"
+                         ]
+    },
+    {
+        "nom":  "Saint-Laurent-des-Vignes",
+        "code":  "24437",
+        "codesPostaux":  [
+                             "24100"
+                         ]
+    },
+    {
+        "nom":  "Saint-Laurent-la-Vallée",
+        "code":  "24438",
+        "codesPostaux":  [
+                             "24170"
+                         ]
+    },
+    {
+        "nom":  "Saint-Léon-d\u0027Issigeac",
+        "code":  "24441",
+        "codesPostaux":  [
+                             "24560"
+                         ]
+    },
+    {
+        "nom":  "Saint-Léon-sur-l\u0027Isle",
+        "code":  "24442",
+        "codesPostaux":  [
+                             "24110"
+                         ]
+    },
+    {
+        "nom":  "Saint-Léon-sur-Vézère",
+        "code":  "24443",
+        "codesPostaux":  [
+                             "24290"
+                         ]
+    },
+    {
+        "nom":  "Saint-Louis-en-l\u0027Isle",
+        "code":  "24444",
+        "codesPostaux":  [
+                             "24400"
+                         ]
+    },
+    {
+        "nom":  "Saint-Marcel-du-Périgord",
+        "code":  "24445",
+        "codesPostaux":  [
+                             "24510"
+                         ]
+    },
+    {
+        "nom":  "Saint-Marcory",
+        "code":  "24446",
+        "codesPostaux":  [
+                             "24540"
+                         ]
+    },
+    {
+        "nom":  "Saint-Martial-d\u0027Albarède",
+        "code":  "24448",
+        "codesPostaux":  [
+                             "24160"
+                         ]
+    },
+    {
+        "nom":  "Saint-Martial-d\u0027Artenset",
+        "code":  "24449",
+        "codesPostaux":  [
+                             "24700"
+                         ]
+    },
+    {
+        "nom":  "Saint-Martial-de-Nabirat",
+        "code":  "24450",
+        "codesPostaux":  [
+                             "24250"
+                         ]
+    },
+    {
+        "nom":  "Saint-Martial-de-Valette",
+        "code":  "24451",
+        "codesPostaux":  [
+                             "24300"
+                         ]
+    },
+    {
+        "nom":  "Saint-Martial-Viveyrol",
+        "code":  "24452",
+        "codesPostaux":  [
+                             "24320"
+                         ]
+    },
+    {
+        "nom":  "Saint-Martin-de-Fressengeas",
+        "code":  "24453",
+        "codesPostaux":  [
+                             "24800"
+                         ]
+    },
+    {
+        "nom":  "Saint-Martin-de-Gurson",
+        "code":  "24454",
+        "codesPostaux":  [
+                             "24610"
+                         ]
+    },
+    {
+        "nom":  "Saint-Martin-de-Ribérac",
+        "code":  "24455",
+        "codesPostaux":  [
+                             "24600"
+                         ]
+    },
+    {
+        "nom":  "Saint-Martin-des-Combes",
+        "code":  "24456",
+        "codesPostaux":  [
+                             "24140"
+                         ]
+    },
+    {
+        "nom":  "Saint-Martin-l\u0027Astier",
+        "code":  "24457",
+        "codesPostaux":  [
+                             "24400"
+                         ]
+    },
+    {
+        "nom":  "Saint-Martin-le-Pin",
+        "code":  "24458",
+        "codesPostaux":  [
+                             "24300"
+                         ]
+    },
+    {
+        "nom":  "Saint-Mayme-de-Péreyrol",
+        "code":  "24459",
+        "codesPostaux":  [
+                             "24380"
+                         ]
+    },
+    {
+        "nom":  "Saint-Méard-de-Drône",
+        "code":  "24460",
+        "codesPostaux":  [
+                             "24600"
+                         ]
+    },
+    {
+        "nom":  "Saint-Méard-de-Gurçon",
+        "code":  "24461",
+        "codesPostaux":  [
+                             "24610"
+                         ]
+    },
+    {
+        "nom":  "Saint-Médard-de-Mussidan",
+        "code":  "24462",
+        "codesPostaux":  [
+                             "24400"
+                         ]
+    },
+    {
+        "nom":  "Saint-Médard-d\u0027Excideuil",
+        "code":  "24463",
+        "codesPostaux":  [
+                             "24160"
+                         ]
+    },
+    {
+        "nom":  "Saint-Mesmin",
+        "code":  "24464",
+        "codesPostaux":  [
+                             "24270"
+                         ]
+    },
+    {
+        "nom":  "Saint-Michel-de-Double",
+        "code":  "24465",
+        "codesPostaux":  [
+                             "24400"
+                         ]
+    },
+    {
+        "nom":  "Saint-Michel-de-Montaigne",
+        "code":  "24466",
+        "codesPostaux":  [
+                             "24230"
+                         ]
+    },
+    {
+        "nom":  "Saint-Michel-de-Villadeix",
+        "code":  "24468",
+        "codesPostaux":  [
+                             "24380"
+                         ]
+    },
+    {
+        "nom":  "Sainte-Mondane",
+        "code":  "24470",
+        "codesPostaux":  [
+                             "24370"
+                         ]
+    },
+    {
+        "nom":  "Sainte-Nathalène",
+        "code":  "24471",
+        "codesPostaux":  [
+                             "24200"
+                         ]
+    },
+    {
+        "nom":  "Saint-Nexans",
+        "code":  "24472",
+        "codesPostaux":  [
+                             "24520"
+                         ]
+    },
+    {
+        "nom":  "Sainte-Orse",
+        "code":  "24473",
+        "codesPostaux":  [
+                             "24210"
+                         ]
+    },
+    {
+        "nom":  "Saint-Pancrace",
+        "code":  "24474",
+        "codesPostaux":  [
+                             "24530"
+                         ]
+    },
+    {
+        "nom":  "Saint-Pantaly-d\u0027Excideuil",
+        "code":  "24476",
+        "codesPostaux":  [
+                             "24160"
+                         ]
+    },
+    {
+        "nom":  "Saint-Pardoux-de-Drône",
+        "code":  "24477",
+        "codesPostaux":  [
+                             "24600"
+                         ]
+    },
+    {
+        "nom":  "Saint-Pardoux-et-Vielvic",
+        "code":  "24478",
+        "codesPostaux":  [
+                             "24170"
+                         ]
+    },
+    {
+        "nom":  "Saint-Pardoux-la-Rivière",
+        "code":  "24479",
+        "codesPostaux":  [
+                             "24470"
+                         ]
+    },
+    {
+        "nom":  "Saint-Paul-de-Serre",
+        "code":  "24480",
+        "codesPostaux":  [
+                             "24380"
+                         ]
+    },
+    {
+        "nom":  "Saint-Paul-la-Roche",
+        "code":  "24481",
+        "codesPostaux":  [
+                             "24800"
+                         ]
+    },
+    {
+        "nom":  "Saint-Paul-Lizonne",
+        "code":  "24482",
+        "codesPostaux":  [
+                             "24320"
+                         ]
+    },
+    {
+        "nom":  "Saint-Perdoux",
+        "code":  "24483",
+        "codesPostaux":  [
+                             "24560"
+                         ]
+    },
+    {
+        "nom":  "Saint-Pierre-de-Chignac",
+        "code":  "24484",
+        "codesPostaux":  [
+                             "24330"
+                         ]
+    },
+    {
+        "nom":  "Saint-Pierre-de-Côle",
+        "code":  "24485",
+        "codesPostaux":  [
+                             "24800"
+                         ]
+    },
+    {
+        "nom":  "Saint-Pierre-de-Frugie",
+        "code":  "24486",
+        "codesPostaux":  [
+                             "24450"
+                         ]
+    },
+    {
+        "nom":  "Saint-Pierre-d\u0027Eyraud",
+        "code":  "24487",
+        "codesPostaux":  [
+                             "24130"
+                         ]
+    },
+    {
+        "nom":  "Saint-Pompon",
+        "code":  "24488",
+        "codesPostaux":  [
+                             "24170"
+                         ]
+    },
+    {
+        "nom":  "Saint-Priest-les-Fougères",
+        "code":  "24489",
+        "codesPostaux":  [
+                             "24450"
+                         ]
+    },
+    {
+        "nom":  "Saint Privat en Périgord",
+        "code":  "24490",
+        "codesPostaux":  [
+                             "24410"
+                         ]
+    },
+    {
+        "nom":  "Saint-Rabier",
+        "code":  "24491",
+        "codesPostaux":  [
+                             "24210"
+                         ]
+    },
+    {
+        "nom":  "Sainte-Radegonde",
+        "code":  "24492",
+        "codesPostaux":  [
+                             "24560"
+                         ]
+    },
+    {
+        "nom":  "Saint-Raphaël",
+        "code":  "24493",
+        "codesPostaux":  [
+                             "24160"
+                         ]
+    },
+    {
+        "nom":  "Saint-Rémy",
+        "code":  "24494",
+        "codesPostaux":  [
+                             "24700"
+                         ]
+    },
+    {
+        "nom":  "Saint-Romain-de-Monpazier",
+        "code":  "24495",
+        "codesPostaux":  [
+                             "24540"
+                         ]
+    },
+    {
+        "nom":  "Saint-Romain-et-Saint-Clément",
+        "code":  "24496",
+        "codesPostaux":  [
+                             "24800"
+                         ]
+    },
+    {
+        "nom":  "Saint-Saud-Lacoussière",
+        "code":  "24498",
+        "codesPostaux":  [
+                             "24470"
+                         ]
+    },
+    {
+        "nom":  "Saint-Sauveur",
+        "code":  "24499",
+        "codesPostaux":  [
+                             "24520"
+                         ]
+    },
+    {
+        "nom":  "Saint-Sauveur-Lalande",
+        "code":  "24500",
+        "codesPostaux":  [
+                             "24700"
+                         ]
+    },
+    {
+        "nom":  "Saint-Seurin-de-Prats",
+        "code":  "24501",
+        "codesPostaux":  [
+                             "24230"
+                         ]
+    },
+    {
+        "nom":  "Saint-Séverin-d\u0027Estissac",
+        "code":  "24502",
+        "codesPostaux":  [
+                             "24190"
+                         ]
+    },
+    {
+        "nom":  "Saint-Sulpice-de-Roumagnac",
+        "code":  "24504",
+        "codesPostaux":  [
+                             "24600"
+                         ]
+    },
+    {
+        "nom":  "Saint-Sulpice-d\u0027Excideuil",
+        "code":  "24505",
+        "codesPostaux":  [
+                             "24800"
+                         ]
+    },
+    {
+        "nom":  "Sainte-Trie",
+        "code":  "24507",
+        "codesPostaux":  [
+                             "24160"
+                         ]
+    },
+    {
+        "nom":  "Saint-Victor",
+        "code":  "24508",
+        "codesPostaux":  [
+                             "24350"
+                         ]
+    },
+    {
+        "nom":  "Saint-Vincent-de-Connezac",
+        "code":  "24509",
+        "codesPostaux":  [
+                             "24190"
+                         ]
+    },
+    {
+        "nom":  "Saint-Vincent-de-Cosse",
+        "code":  "24510",
+        "codesPostaux":  [
+                             "24220"
+                         ]
+    },
+    {
+        "nom":  "Saint-Vincent-Jalmoutiers",
+        "code":  "24511",
+        "codesPostaux":  [
+                             "24410"
+                         ]
+    },
+    {
+        "nom":  "Saint-Vincent-le-Paluel",
+        "code":  "24512",
+        "codesPostaux":  [
+                             "24200"
+                         ]
+    },
+    {
+        "nom":  "Saint-Vincent-sur-l\u0027Isle",
+        "code":  "24513",
+        "codesPostaux":  [
+                             "24420"
+                         ]
+    },
+    {
+        "nom":  "Saint-Vivien",
+        "code":  "24514",
+        "codesPostaux":  [
+                             "24230"
+                         ]
+    },
+    {
+        "nom":  "Salagnac",
+        "code":  "24515",
+        "codesPostaux":  [
+                             "24160"
+                         ]
+    },
+    {
+        "nom":  "Salignac-Eyvigues",
+        "code":  "24516",
+        "codesPostaux":  [
+                             "24590"
+                         ]
+    },
+    {
+        "nom":  "Salles-de-Belvès",
+        "code":  "24517",
+        "codesPostaux":  [
+                             "24170"
+                         ]
+    },
+    {
+        "nom":  "Salon",
+        "code":  "24518",
+        "codesPostaux":  [
+                             "24380"
+                         ]
+    },
+    {
+        "nom":  "Sarlande",
+        "code":  "24519",
+        "codesPostaux":  [
+                             "24270"
+                         ]
+    },
+    {
+        "nom":  "Sarlat-la-Canéda",
+        "code":  "24520",
+        "codesPostaux":  [
+                             "24200"
+                         ]
+    },
+    {
+        "nom":  "Sarliac-sur-l\u0027Isle",
+        "code":  "24521",
+        "codesPostaux":  [
+                             "24420"
+                         ]
+    },
+    {
+        "nom":  "Sarrazac",
+        "code":  "24522",
+        "codesPostaux":  [
+                             "24800"
+                         ]
+    },
+    {
+        "nom":  "Saussignac",
+        "code":  "24523",
+        "codesPostaux":  [
+                             "24240"
+                         ]
+    },
+    {
+        "nom":  "Savignac-de-Miremont",
+        "code":  "24524",
+        "codesPostaux":  [
+                             "24260"
+                         ]
+    },
+    {
+        "nom":  "Savignac-de-Nontron",
+        "code":  "24525",
+        "codesPostaux":  [
+                             "24300"
+                         ]
+    },
+    {
+        "nom":  "Savignac-Lédrier",
+        "code":  "24526",
+        "codesPostaux":  [
+                             "24270"
+                         ]
+    },
+    {
+        "nom":  "Savignac-les-Églises",
+        "code":  "24527",
+        "codesPostaux":  [
+                             "24420"
+                         ]
+    },
+    {
+        "nom":  "Sceau-Saint-Angel",
+        "code":  "24528",
+        "codesPostaux":  [
+                             "24300"
+                         ]
+    },
+    {
+        "nom":  "Segonzac",
+        "code":  "24529",
+        "codesPostaux":  [
+                             "24600"
+                         ]
+    },
+    {
+        "nom":  "Sergeac",
+        "code":  "24531",
+        "codesPostaux":  [
+                             "24290"
+                         ]
+    },
+    {
+        "nom":  "Serres-et-Montguyard",
+        "code":  "24532",
+        "codesPostaux":  [
+                             "24500"
+                         ]
+    },
+    {
+        "nom":  "Servanches",
+        "code":  "24533",
+        "codesPostaux":  [
+                             "24410"
+                         ]
+    },
+    {
+        "nom":  "Sigoulès-et-Flaugeac",
+        "code":  "24534",
+        "codesPostaux":  [
+                             "24240"
+                         ]
+    },
+    {
+        "nom":  "Simeyrols",
+        "code":  "24535",
+        "codesPostaux":  [
+                             "24370"
+                         ]
+    },
+    {
+        "nom":  "Singleyrac",
+        "code":  "24536",
+        "codesPostaux":  [
+                             "24500"
+                         ]
+    },
+    {
+        "nom":  "Siorac-de-Ribérac",
+        "code":  "24537",
+        "codesPostaux":  [
+                             "24600"
+                         ]
+    },
+    {
+        "nom":  "Siorac-en-Périgord",
+        "code":  "24538",
+        "codesPostaux":  [
+                             "24170"
+                         ]
+    },
+    {
+        "nom":  "Sorges et Ligueux en Périgord",
+        "code":  "24540",
+        "codesPostaux":  [
+                             "24420",
+                             "24460"
+                         ]
+    },
+    {
+        "nom":  "Soudat",
+        "code":  "24541",
+        "codesPostaux":  [
+                             "24360"
+                         ]
+    },
+    {
+        "nom":  "Soulaures",
+        "code":  "24542",
+        "codesPostaux":  [
+                             "24540"
+                         ]
+    },
+    {
+        "nom":  "Sourzac",
+        "code":  "24543",
+        "codesPostaux":  [
+                             "24400"
+                         ]
+    },
+    {
+        "nom":  "Tamniès",
+        "code":  "24544",
+        "codesPostaux":  [
+                             "24620"
+                         ]
+    },
+    {
+        "nom":  "Teillots",
+        "code":  "24545",
+        "codesPostaux":  [
+                             "24390"
+                         ]
+    },
+    {
+        "nom":  "Temple-Laguyon",
+        "code":  "24546",
+        "codesPostaux":  [
+                             "24390"
+                         ]
+    },
+    {
+        "nom":  "Terrasson-Lavilledieu",
+        "code":  "24547",
+        "codesPostaux":  [
+                             "24120"
+                         ]
+    },
+    {
+        "nom":  "Teyjat",
+        "code":  "24548",
+        "codesPostaux":  [
+                             "24300"
+                         ]
+    },
+    {
+        "nom":  "Thénac",
+        "code":  "24549",
+        "codesPostaux":  [
+                             "24240"
+                         ]
+    },
+    {
+        "nom":  "Thenon",
+        "code":  "24550",
+        "codesPostaux":  [
+                             "24210"
+                         ]
+    },
+    {
+        "nom":  "Thiviers",
+        "code":  "24551",
+        "codesPostaux":  [
+                             "24800"
+                         ]
+    },
+    {
+        "nom":  "Thonac",
+        "code":  "24552",
+        "codesPostaux":  [
+                             "24290"
+                         ]
+    },
+    {
+        "nom":  "Tocane-Saint-Apre",
+        "code":  "24553",
+        "codesPostaux":  [
+                             "24350"
+                         ]
+    },
+    {
+        "nom":  "La Tour-Blanche-Cercles",
+        "code":  "24554",
+        "codesPostaux":  [
+                             "24320"
+                         ]
+    },
+    {
+        "nom":  "Tourtoirac",
+        "code":  "24555",
+        "codesPostaux":  [
+                             "24390"
+                         ]
+    },
+    {
+        "nom":  "Trélissac",
+        "code":  "24557",
+        "codesPostaux":  [
+                             "24750"
+                         ]
+    },
+    {
+        "nom":  "Trémolat",
+        "code":  "24558",
+        "codesPostaux":  [
+                             "24510"
+                         ]
+    },
+    {
+        "nom":  "Tursac",
+        "code":  "24559",
+        "codesPostaux":  [
+                             "24620"
+                         ]
+    },
+    {
+        "nom":  "Urval",
+        "code":  "24560",
+        "codesPostaux":  [
+                             "24480"
+                         ]
+    },
+    {
+        "nom":  "Vallereuil",
+        "code":  "24562",
+        "codesPostaux":  [
+                             "24190"
+                         ]
+    },
+    {
+        "nom":  "Valojoulx",
+        "code":  "24563",
+        "codesPostaux":  [
+                             "24290"
+                         ]
+    },
+    {
+        "nom":  "Vanxains",
+        "code":  "24564",
+        "codesPostaux":  [
+                             "24600"
+                         ]
+    },
+    {
+        "nom":  "Varaignes",
+        "code":  "24565",
+        "codesPostaux":  [
+                             "24360"
+                         ]
+    },
+    {
+        "nom":  "Varennes",
+        "code":  "24566",
+        "codesPostaux":  [
+                             "24150"
+                         ]
+    },
+    {
+        "nom":  "Vaunac",
+        "code":  "24567",
+        "codesPostaux":  [
+                             "24800"
+                         ]
+    },
+    {
+        "nom":  "Vélines",
+        "code":  "24568",
+        "codesPostaux":  [
+                             "24230"
+                         ]
+    },
+    {
+        "nom":  "Vendoire",
+        "code":  "24569",
+        "codesPostaux":  [
+                             "24320"
+                         ]
+    },
+    {
+        "nom":  "Verdon",
+        "code":  "24570",
+        "codesPostaux":  [
+                             "24520"
+                         ]
+    },
+    {
+        "nom":  "Vergt",
+        "code":  "24571",
+        "codesPostaux":  [
+                             "24380"
+                         ]
+    },
+    {
+        "nom":  "Vergt-de-Biron",
+        "code":  "24572",
+        "codesPostaux":  [
+                             "24540"
+                         ]
+    },
+    {
+        "nom":  "Verteillac",
+        "code":  "24573",
+        "codesPostaux":  [
+                             "24320"
+                         ]
+    },
+    {
+        "nom":  "Veyrignac",
+        "code":  "24574",
+        "codesPostaux":  [
+                             "24370"
+                         ]
+    },
+    {
+        "nom":  "Veyrines-de-Domme",
+        "code":  "24575",
+        "codesPostaux":  [
+                             "24250"
+                         ]
+    },
+    {
+        "nom":  "Veyrines-de-Vergt",
+        "code":  "24576",
+        "codesPostaux":  [
+                             "24380"
+                         ]
+    },
+    {
+        "nom":  "Vézac",
+        "code":  "24577",
+        "codesPostaux":  [
+                             "24220"
+                         ]
+    },
+    {
+        "nom":  "Villac",
+        "code":  "24580",
+        "codesPostaux":  [
+                             "24120"
+                         ]
+    },
+    {
+        "nom":  "Villamblard",
+        "code":  "24581",
+        "codesPostaux":  [
+                             "24140"
+                         ]
+    },
+    {
+        "nom":  "Villars",
+        "code":  "24582",
+        "codesPostaux":  [
+                             "24530"
+                         ]
+    },
+    {
+        "nom":  "Villefranche-de-Lonchat",
+        "code":  "24584",
+        "codesPostaux":  [
+                             "24610"
+                         ]
+    },
+    {
+        "nom":  "Villefranche-du-Périgord",
+        "code":  "24585",
+        "codesPostaux":  [
+                             "24550"
+                         ]
+    },
+    {
+        "nom":  "Villetoureix",
+        "code":  "24586",
+        "codesPostaux":  [
+                             "24600"
+                         ]
+    },
+    {
+        "nom":  "Vitrac",
+        "code":  "24587",
+        "codesPostaux":  [
+                             "24200"
+                         ]
+    }
+]
+

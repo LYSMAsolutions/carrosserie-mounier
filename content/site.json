@@ -1,0 +1,89 @@
+﻿{
+  "brand": {
+    "name": "Carrosserie Mounier",
+    "logo": "assets/logos/logo-mounier.png"
+  },
+  "colors": {
+    "primary": "#293133",
+    "primaryDark": "#181f20",
+    "accent": "#ff6a00",
+    "accentSoft": "#ff8a2a",
+    "text": "#172027",
+    "muted": "#6b737a",
+    "background": "#f4f5f6"
+  },
+  "hero": {
+    "eyebrow": "Atelier nouvelle generation",
+    "title": "Carrosserie",
+    "highlight": "Mounier",
+    "description": "Une carrosserie entièrement repensée : cabine Novaverta, laboratoire peinture, aire de préparation moderne et équipements premium.",
+    "primaryCta": "Demander un devis",
+    "secondaryCta": "Découvrir l'atelier",
+    "panelTitle": "Atelier de précision",
+    "panelText": "Isolation, sol résine, cabine éco-énergétique, peinture AkzoNobel.",
+    "image": "assets/images/hero-atelier.jpg"
+  },
+  "sections": {
+    "processTitle": "Une méthode pensée comme une chaine de précision.",
+    "processDescription": "Chaque véhicule suit un parcours clair : préparation, peinture, finition et contrôle qualité.",
+    "atelierTitle": "Un environnement technique, propre et maitrise.",
+    "atelierText": "Sol en résine, isolation, cabine, laboratoire peinture et aire de préparation : la Carrosserie Mounier assume une approche haut de gamme, moderne et différenciante.",
+    "ctaTitle": "Confiez votre véhicule a un atelier d'exception.",
+    "ctaText": "Une carrosserie moderne, équipée, exigeante et tournée vers la qualité durable."
+  },
+  "pages": {
+    "atelier": {
+      "kicker": "Atelier",
+      "title": "Une carrosserie transformée en atelier de précision.",
+      "description": "Isolation, sol en résine, cabine, aire de préparation et laboratoire peinture : chaque détail a été pensé pour un rendu haut de gamme.",
+      "seoTitle": "L'atelier - Carrosserie Mounier",
+      "seoDescription": "Découvrez l'atelier nouvelle génération de la Carrosserie Mounier."
+    },
+    "technologies": {
+      "kicker": "Technologies",
+      "title": "Des équipements au service d'un résultat supérieur.",
+      "description": "Novaverta, AkzoNobel, Mirka, 3M, Facom, Iwata : des choix techniques cohérents pour garantir précision, régularité et finition.",
+      "seoTitle": "Technologies - Carrosserie Mounier",
+      "seoDescription": "Equipements et partenaires premium de la Carrosserie Mounier."
+    },
+    "prestations": {
+      "kicker": "Prestations",
+      "title": "Des interventions propres, précises et maitrisées.",
+      "description": "De la réparation esthétique a la peinture complète, l'atelier accompagne particuliers et professionnels avec un haut niveau d'exigence.",
+      "seoTitle": "Prestations - Carrosserie Mounier",
+      "seoDescription": "Prestations de carrosserie, peinture, préparation et finition."
+    },
+    "realisations": {
+      "kicker": "Réalisations",
+      "title": "La qualité se voit dans les détails.",
+      "description": "Ajoutez ici les vraies photos avant/après pour montrer la précision, la propreté et la finition de l'atelier.",
+      "seoTitle": "Réalisations - Carrosserie Mounier",
+      "seoDescription": "Exemples de réalisations et travaux avant/après."
+    },
+    "contact": {
+      "kicker": "Contact",
+      "title": "Demander un devis ou prendre rendez-vous.",
+      "description": "Contactez la Carrosserie Mounier pour une demande de devis, un renseignement ou une prise de rendez-vous.",
+      "seoTitle": "Contact - Carrosserie Mounier",
+      "seoDescription": "Contact et demande de devis pour la Carrosserie Mounier."
+    }
+  },
+  "contact": {
+    "address": "32 Route du Pouyault - 24750 Trelissac",
+    "phone": "06 08 37 82 17",
+    "email": "contact@carrosserie-mounier.fr",
+    "hours": "Lundi au vendredi - 8h00 / 12h00 - 14h00 / 18h00"
+  },
+  "seo": {
+    "title": "Carrosserie Mounier",
+    "description": "Carrosserie Mounier : atelier nouvelle génération, cabine éco-énergétique, laboratoire peinture Novaverta, équipement premium et expertise toutes marques.",
+    "canonical": "",
+    "keywords": "carrosserie, peinture automobile, carrosserie Mounier, atelier carrosserie, Trelissac",
+    "robots": "index, follow",
+    "ogTitle": "Carrosserie Mounier",
+    "ogDescription": "Atelier carrosserie nouvelle generation, equipements premium et finition haut de gamme.",
+    "ogImage": "assets/images/hero-atelier.jpg"
+  }
+}
+
+

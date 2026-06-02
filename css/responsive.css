@@ -1,0 +1,884 @@
+/* TABLETTE / PETIT DESKTOP */
+
+@media (max-width: 1180px) {
+  .container {
+    width: min(100% - 44px, 1320px);
+  }
+
+  .local-service-grid,
+  .local-communes-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .site-header {
+    height: 90px;
+  }
+
+  .logo-img {
+    height: 132px;
+  }
+
+  .main-nav,
+  .btn-header {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: block;
+    width: 46px;
+    height: 46px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.14);
+    flex: 0 0 auto;
+  }
+
+  .mobile-toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: white;
+    margin: 5px auto;
+  }
+
+  .main-nav.is-open {
+    position: fixed;
+    top: 90px;
+    left: 0;
+    right: 0;
+    display: grid;
+    padding: 12px 24px 28px;
+    background: rgba(37,42,45,0.98);
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .main-nav.is-open a {
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .main-nav.is-open .nav-group {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .main-nav.is-open .nav-group button {
+    width: 100%;
+    padding: 16px 0;
+    text-align: left;
+  }
+
+  .main-nav.is-open .nav-group > div {
+    position: static;
+    transform: none;
+    min-width: 0;
+    max-height: 0;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    overflow: hidden;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    transition: max-height 0.28s ease, opacity 0.22s ease, padding 0.22s ease;
+  }
+
+  .main-nav.is-open .nav-group.is-open > div {
+    max-height: 420px;
+    margin: 0;
+    padding: 0 0 12px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    background: transparent;
+    border-left: 0;
+    border-radius: 0;
+  }
+
+  .main-nav.is-open .nav-group > div a {
+    padding: 10px 0 10px 16px;
+    font-size: 11px;
+    min-height: auto;
+    white-space: normal;
+  }
+
+  .main-nav.is-open .menu-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255,255,255,0.14);
+  }
+
+  .main-nav.is-open .menu-actions a {
+    min-height: 46px;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    background: var(--orange);
+    color: white;
+    border: 0;
+    font-size: 12px;
+  }
+
+  .main-nav.is-open .menu-actions a:last-child {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.16);
+  }
+
+  .hero-grid,
+  .cinematic-grid,
+  .section-head {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-panel {
+    justify-self: start;
+  }
+
+  .badge-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partners-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .mechanic-equipment-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .mechanic-equipment-main {
+    min-height: 150px;
+  }
+
+  .partner-title {
+    text-align: center;
+  }
+
+  .process-grid,
+  .services-grid,
+  .contact-layout,
+  .quick-actions-grid,
+  .prestations-showcase,
+  .split-feature-grid,
+  .covering-grid,
+  .service-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-actions-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .realisation-board,
+  .faq-grid,
+  .trust-grid,
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .insurance-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .insurance-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .insurance-logo-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .insurance-note {
+    grid-template-columns: 1fr;
+  }
+
+  .realisation-hero-grid,
+  .result-proof-grid,
+  .realisation-card-grid,
+  .premium-gallery,
+  .prestations-hub-grid,
+  .service-hero-grid,
+  .service-page-layout,
+  .recruitment-layout,
+  .related-grid,
+  .intro-premium-grid,
+  .faq-page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .commitments {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .commitment-intro {
+    grid-column: 1 / -1;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 720px) {
+  .container {
+    width: min(100% - 28px, 1320px);
+  }
+
+  .site-header {
+    height: 76px;
+  }
+
+  .header-inner {
+    gap: 12px;
+  }
+
+  .logo-img {
+    height: 108px;
+  }
+
+  .mobile-toggle {
+    width: 42px;
+    height: 42px;
+  }
+
+  .main-nav.is-open {
+    top: 76px;
+  }
+
+  .hero {
+    min-height: auto;
+    background:
+      linear-gradient(180deg, rgba(56,62,66,0.92), rgba(56,62,66,0.78), rgba(56,62,66,0.98)),
+      url("../assets/images/hero-atelier.jpg") center / cover no-repeat;
+  }
+
+  .hero-content {
+    padding: 64px 0 54px;
+  }
+
+  .hero-refined .hero-content {
+    padding: 48px 0 42px;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    letter-spacing: -0.055em;
+  }
+
+  .hero-refined h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .hero-actions {
+    display: grid;
+    gap: 12px;
+  }
+
+  .page-hero {
+    margin-bottom: 82px;
+  }
+
+  .page-hero .hero-bubble-actions {
+    left: 14px;
+    right: 14px;
+    width: auto;
+    bottom: -34px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .hero-bubble-actions .side-action {
+    min-width: 0;
+    width: 100%;
+    min-height: 56px;
+    padding-inline: 14px;
+  }
+
+  .cta-bubble-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+  }
+
+  .cta-bubble-actions .side-action {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-panel {
+    width: 100%;
+    padding: 22px;
+  }
+
+  .hero-badges {
+    padding: 18px 0;
+  }
+
+  .badge-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .badge-item {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .partners {
+    padding: 22px 0;
+  }
+
+  .partners-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .partner-title {
+    text-align: center;
+  }
+
+  .logo-marquee {
+    width: 100%;
+    padding: 14px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+
+  .logo-track {
+    gap: 42px;
+    animation: scrollLogos 16s linear infinite;
+  }
+
+  .partner-logo {
+    min-width: 120px;
+  }
+
+  .partner-logo img {
+    max-height: 34px;
+    filter: grayscale(35%);
+    opacity: 0.95;
+  }
+
+  .mechanic-equipment-main img {
+    max-width: 150px;
+  }
+
+  .mechanic-logo-track {
+    gap: 28px;
+    animation-duration: 22s;
+  }
+
+  .mechanic-equipment-logo {
+    width: 142px;
+    height: 68px;
+    padding: 10px 14px;
+  }
+
+  .mechanic-equipment-logo img {
+    max-width: 118px;
+    max-height: 46px;
+  }
+
+  .section {
+    padding: 58px 0;
+  }
+
+  .section-head {
+    display: grid;
+    gap: 18px;
+    margin-bottom: 30px;
+  }
+
+  .section-title {
+    font-size: 36px;
+    letter-spacing: -0.045em;
+  }
+
+  .section-desc {
+    font-size: 16px;
+  }
+
+  .process-grid,
+  .cards-grid,
+  .commitments,
+  .gallery-grid,
+  .services-grid,
+  .contact-layout,
+  .quick-actions-grid,
+  .prestations-showcase,
+  .split-feature-grid,
+  .covering-grid,
+  .service-detail-grid,
+  .realisation-board,
+  .faq-grid,
+  .insurance-grid,
+  .trust-grid,
+  .reviews-grid,
+  .contact-premium {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .home-contact-card {
+    min-height: auto;
+    padding: 42px 28px;
+    background:
+      linear-gradient(180deg, rgba(24, 29, 31, .94) 0%, rgba(24, 29, 31, .78) 62%, rgba(24, 29, 31, .46) 100%),
+      url("../assets/images/carrosserie-ext.jpeg") center / cover no-repeat;
+  }
+
+  .home-contact-lines a,
+  .home-contact-lines div {
+    align-items: flex-start;
+  }
+
+  .quick-actions {
+    margin-top: 0;
+    padding: 16px 0;
+    background: #252a2d;
+  }
+
+  .quick-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 0;
+  }
+
+  .quick-action {
+    min-width: 0;
+    min-height: 56px;
+  }
+
+  .insurance-logo-grid,
+  .insurance-note {
+    grid-template-columns: 1fr;
+  }
+
+  .insurance-logo-card {
+    min-height: 96px;
+  }
+
+  .insurance-logo-card img {
+    max-width: 150px;
+    height: 40px;
+  }
+
+  .level-grid,
+  .insurance-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .covering-visual {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .covering-visual div {
+    min-height: 220px;
+  }
+
+  .before-after,
+  .before-after img {
+    min-height: 310px;
+  }
+
+  .comparison-card {
+    grid-template-rows: 260px 1fr;
+  }
+
+  .comparison-card img,
+  .comparison-card:first-child img {
+    height: 100%;
+  }
+
+  .contact-map {
+    min-height: 280px;
+    padding: 22px;
+  }
+
+  .realisation-hero {
+    padding: 58px 0;
+  }
+
+  .realisation-hero-grid,
+  .result-proof-grid,
+  .realisation-card-grid,
+  .premium-gallery,
+  .prestations-hub-grid,
+  .service-hero-grid,
+  .service-page-layout,
+  .recruitment-layout,
+  .related-grid,
+  .intro-premium-grid,
+  .faq-page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-refined .hero-content {
+    padding-left: 0;
+  }
+
+  .home-prestations {
+    grid-template-columns: 1fr;
+  }
+
+  .insurance-logo {
+    width: 150px;
+    height: 72px;
+  }
+
+  .insurance-logo img {
+    max-width: 118px;
+    height: 34px;
+  }
+
+  .google-review-shell {
+    display: grid;
+  }
+
+  .featured-ba-caption,
+  .category-cta {
+    display: grid;
+  }
+
+  .featured-ba-caption span {
+    text-align: left;
+  }
+
+  .ba-slider,
+  .work-card .ba-slider {
+    min-height: 290px;
+  }
+
+  .ba-handle {
+    width: 48px;
+    height: 48px;
+  }
+
+  .premium-gallery-item,
+  .premium-gallery-item:first-child {
+    min-height: 260px;
+  }
+
+  .trust-statement {
+    padding: 38px 24px;
+  }
+
+  .service-hero {
+    padding: 58px 0;
+  }
+
+  .service-hero-image,
+  .service-hero-compare {
+    min-height: 280px;
+  }
+
+  .service-page-main {
+    padding: 28px;
+  }
+
+  .service-page-main h2 {
+    font-size: 24px;
+  }
+
+  .service-page-side {
+    position: static;
+  }
+
+  .prestation-mini-card {
+    min-height: 150px;
+  }
+
+  .contact-panel,
+  .trust-card,
+  .review-card {
+    padding: 26px;
+  }
+
+  .contact-premium-lines a,
+  .contact-premium-lines div {
+    display: grid;
+    gap: 6px;
+  }
+
+  .contact-premium-lines span {
+    text-align: left;
+  }
+
+  .accordion-item button {
+    min-height: 58px;
+    font-size: 14px;
+  }
+
+  .mobile-sticky-cta {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    z-index: 120;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    background: rgba(37, 42, 45, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.26);
+    backdrop-filter: blur(16px);
+  }
+
+  .mobile-sticky-cta a {
+    min-height: 46px;
+    display: grid;
+    place-items: center;
+    background: var(--orange);
+    color: white;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .mobile-sticky-cta a:last-child {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  body {
+    padding-bottom: 74px;
+  }
+
+  .process-card {
+    min-height: auto;
+    padding: 28px;
+  }
+
+  .cinematic-image,
+  .gallery-item,
+  .gallery-item:first-child {
+    min-height: 300px;
+  }
+
+  .cards-grid {
+    gap: 16px;
+  }
+
+  .card-img {
+    height: 220px;
+  }
+
+  .cta-final {
+    padding: 42px 26px;
+  }
+
+  .cta-final h2 {
+    font-size: 36px;
+  }
+
+  .cta-final p {
+    font-size: 16px;
+  }
+
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 18px;
+    justify-items: center;
+    text-align: center;
+    padding-inline: 16px;
+  }
+
+  .footer-brand-social,
+  .footer-links,
+  .footer-copy,
+  .footer-credit {
+    grid-column: 1;
+    justify-self: center;
+    text-align: center;
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .cookie-consent {
+    grid-template-columns: 1fr;
+    bottom: 12px;
+    width: min(100% - 24px, 520px);
+  }
+
+  .cookie-consent-actions,
+  .cookie-modal-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: stretch;
+  }
+
+  .cookie-modal-panel {
+    padding: 24px;
+  }
+
+  .footer-brand-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .footer-socials a,
+  .footer-socials img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .footer-copy,
+  .footer-credit {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}
+
+/* TRES PETIT MOBILE */
+
+@media (max-width: 420px) {
+  .container {
+    width: min(100% - 22px, 1320px);
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .logo-img {
+    height: 98px;
+  }
+
+  .site-header {
+    height: 72px;
+  }
+
+  .main-nav.is-open {
+    top: 72px;
+  }
+
+  .page-hero .hero-bubble-actions,
+  .cta-bubble-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .page-hero .hero-bubble-actions {
+    bottom: -84px;
+  }
+
+  .page-hero {
+    margin-bottom: 96px;
+  }
+
+  .side-action {
+    min-height: 54px;
+  }
+
+  .side-action strong {
+    font-size: 10px;
+  }
+
+  .side-action small {
+    font-size: 10px;
+  }
+
+  .site-footer {
+    padding: 42px 0 24px;
+  }
+
+  .home-contact-card {
+    padding: 32px 20px;
+  }
+
+  .home-contact-lines a,
+  .home-contact-lines div {
+    display: grid;
+    gap: 8px;
+  }
+
+  .home-contact-lines span {
+    text-align: left;
+  }
+}
+
+@media (max-width: 720px) {
+  .local-service-grid,
+  .local-communes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .local-service-card {
+    min-height: 180px;
+  }
+
+  .local-communes-details summary {
+    padding: 20px;
+  }
+
+  .local-communes-grid li {
+    min-height: 58px;
+  }
+
+  .partner-logo {
+    min-width: 120px;
+    height: 54px;
+    background: transparent;
+  }
+
+  .partner-logo img {
+    max-height: 38px;
+    max-width: 105px;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%) contrast(1.2) brightness(0.72);
+    opacity: 0.86;
+  }
+
+  .logo-track {
+    gap: 42px;
+    animation-duration: 24s;
+  }
+
+  .logo-marquee {
+    background: #fff;
+  }
+
+  .logo-marquee::before,
+  .logo-marquee::after {
+    width: 42px;
+  }
+}

@@ -1,0 +1,14 @@
+﻿{
+  "name": "carrosserie-mounier",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "seo": "node scripts/generate-seo-assets.mjs",
+    "build": "node scripts/generate-seo-assets.mjs && node scripts/build-static-site.mjs",
+    "dev": "node scripts/static-server.mjs --port 3021",
+    "start": "node scripts/static-server.mjs --port 3021",
+    "check": "node scripts/check-static-site.mjs"
+  }
+}
+
