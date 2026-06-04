@@ -321,3 +321,167 @@ function initSmartEmailLinks() {
 }
 
 initSmartEmailLinks();
+
+function initMounierChatBox() {
+  if (document.querySelector(".site-chat")) return;
+
+  const answers = [
+    {
+      keywords: ["devis", "prix", "tarif", "combien", "cout", "coût", "estimation"],
+      text: "Pour obtenir un tarif fiable, le plus simple est de nous transmettre quelques informations sur votre véhicule et les travaux souhaités. Vous pouvez demander un devis en ligne ou nous appeler directement.",
+      actions: [
+        { label: "Demander un devis", href: new URL("../contact/", scriptBase).href },
+        { label: "Appeler", href: "tel:+33608378217" }
+      ]
+    },
+    {
+      keywords: ["assurance", "assureur", "sinistre", "accident", "expert", "dossier"],
+      text: "Après un sinistre, vous restez libre du choix de votre réparateur. Notre équipe vous accompagne dans les démarches avec l'assurance et vous explique les étapes de prise en charge.",
+      actions: [
+        { label: "Nous contacter", href: new URL("../contact/", scriptBase).href }
+      ]
+    },
+    {
+      keywords: ["rayure", "carrosserie", "choc", "pare-chocs", "parechoc", "peinture", "aile", "portiere", "portière"],
+      text: "Nous intervenons sur les rayures, chocs, pare-chocs, éléments de carrosserie et travaux de peinture. Une observation du véhicule permet de proposer la solution la plus adaptée.",
+      actions: [
+        { label: "Voir les réalisations", href: new URL("../realisations/", scriptBase).href },
+        { label: "Demander un devis", href: new URL("../contact/", scriptBase).href }
+      ]
+    },
+    {
+      keywords: ["phare", "optique", "optiques", "renovation", "rénovation", "controle technique", "contrôle technique"],
+      text: "La rénovation d'optiques améliore la visibilité, l'esthétique du véhicule et peut aider lors du contrôle technique. Le tarif dépend de l'état des phares.",
+      actions: [
+        { label: "Rénovation optique", href: new URL("../prestations/renovation-optique/", scriptBase).href }
+      ]
+    },
+    {
+      keywords: ["covering", "flocage", "marquage", "publicitaire", "utilitaire", "entreprise", "flotte"],
+      text: "Nous proposons du covering automobile et du flocage professionnel pour véhicules d'entreprise, utilitaires et flottes. Le devis dépend du niveau de personnalisation souhaité.",
+      actions: [
+        { label: "Covering", href: new URL("../prestations/covering/", scriptBase).href },
+        { label: "Flocage", href: new URL("../prestations/flocage/", scriptBase).href }
+      ]
+    },
+    {
+      keywords: ["revision", "révision", "vidange", "frein", "freinage", "courroie", "distribution", "amortisseur", "bougie", "mecanique", "mécanique", "entretien"],
+      text: "En plus de la carrosserie, l'atelier assure plusieurs prestations d'entretien mécanique : révision, vidange, freinage, courroie de distribution, amortisseurs et bougies d'allumage.",
+      actions: [
+        { label: "Prestations", href: new URL("../prestations/", scriptBase).href }
+      ]
+    },
+    {
+      keywords: ["horaire", "horaires", "ouvert", "adresse", "itineraire", "itinéraire", "venir", "telephone", "téléphone", "mail", "email"],
+      text: "Vous pouvez joindre Carrosserie Mounier au 06 08 37 82 17, écrire par email ou ouvrir l'itinéraire Google Maps pour venir à l'atelier.",
+      actions: [
+        { label: "Appeler", href: "tel:+33608378217" },
+        { label: "Itinéraire", href: "https://www.google.com/maps/search/?api=1&query=32+Route+du+Pouyault+24750+Tr%C3%A9lissac", external: true }
+      ]
+    },
+    {
+      keywords: ["recrutement", "emploi", "poste", "candidature", "cv", "travail", "embauche"],
+      text: "Vous pouvez déposer une candidature depuis la page recrutement. Le CV est nécessaire, et un court message de motivation aide l'équipe à mieux comprendre votre profil.",
+      actions: [
+        { label: "Recrutement", href: new URL("../recrutement/", scriptBase).href }
+      ]
+    }
+  ];
+
+  const normalize = (value) => String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+
+  const findAnswer = (question) => {
+    const normalizedQuestion = normalize(question);
+    return answers.find((answer) => answer.keywords.some((keyword) => normalizedQuestion.includes(normalize(keyword)))) || {
+      text: "Je peux vous orienter sur les devis, l'assurance, la carrosserie, les optiques, le covering, le flocage, l'entretien ou le recrutement. Pour une réponse précise, contactez directement l'atelier.",
+      actions: [
+        { label: "Appeler", href: "tel:+33608378217" },
+        { label: "Contact", href: new URL("../contact/", scriptBase).href }
+      ]
+    };
+  };
+
+  const chat = document.createElement("section");
+  chat.className = "site-chat";
+  chat.setAttribute("aria-label", "Assistant Carrosserie Mounier");
+  chat.innerHTML = `
+    <button class="site-chat-toggle" type="button" aria-expanded="false" aria-label="Ouvrir l'assistant">
+      <span>?</span>
+    </button>
+    <div class="site-chat-panel" aria-hidden="true">
+      <div class="site-chat-header">
+        <span>Assistant</span>
+        <strong>Carrosserie Mounier</strong>
+        <button type="button" aria-label="Fermer l'assistant" data-chat-close>×</button>
+      </div>
+      <div class="site-chat-messages" role="log" aria-live="polite">
+        <div class="site-chat-message is-bot">Bonjour, je peux vous aider à trouver une prestation, demander un devis ou contacter l'atelier.</div>
+      </div>
+      <form class="site-chat-form">
+        <input type="text" name="question" placeholder="Posez votre question..." autocomplete="off" maxlength="180">
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  `;
+
+  document.body.append(chat);
+
+  const toggleButton = chat.querySelector(".site-chat-toggle");
+  const panel = chat.querySelector(".site-chat-panel");
+  const closeButton = chat.querySelector("[data-chat-close]");
+  const messages = chat.querySelector(".site-chat-messages");
+  const form = chat.querySelector(".site-chat-form");
+  const input = form.querySelector("input");
+
+  const setOpen = (isOpen) => {
+    chat.classList.toggle("is-open", isOpen);
+    toggleButton.setAttribute("aria-expanded", String(isOpen));
+    panel.setAttribute("aria-hidden", String(!isOpen));
+    if (isOpen) setTimeout(() => input.focus(), 120);
+  };
+
+  const appendMessage = (text, type, actions = []) => {
+    const message = document.createElement("div");
+    message.className = `site-chat-message is-${type}`;
+    message.textContent = text;
+    messages.append(message);
+
+    if (actions.length) {
+      const actionList = document.createElement("div");
+      actionList.className = "site-chat-actions";
+      actions.forEach((action) => {
+        const link = document.createElement("a");
+        link.href = action.href;
+        link.textContent = action.label;
+        if (action.external) {
+          link.target = "_blank";
+          link.rel = "noopener";
+        }
+        actionList.append(link);
+      });
+      messages.append(actionList);
+    }
+
+    messages.scrollTop = messages.scrollHeight;
+  };
+
+  toggleButton.addEventListener("click", () => setOpen(!chat.classList.contains("is-open")));
+  closeButton.addEventListener("click", () => setOpen(false));
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const question = input.value.trim();
+    if (!question) return;
+
+    appendMessage(question, "user");
+    input.value = "";
+
+    const answer = findAnswer(question);
+    setTimeout(() => appendMessage(answer.text, "bot", answer.actions), 220);
+  });
+}
+
+initMounierChatBox();
