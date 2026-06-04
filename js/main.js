@@ -325,6 +325,47 @@ initSmartEmailLinks();
 function initMounierChatBox() {
   if (document.querySelector(".site-chat")) return;
 
+  const chatboxLogEndpoint = window.MOUNIER_CHATBOX_LOG_ENDPOINT || "https://lysma-super-admin.vercel.app/api/chatbox/logs";
+  const chatboxSource = "site-vitrine:carrosserie-mounier";
+  const chatboxConversationKey = "mounierChatboxConversationId";
+
+  const getConversationId = () => {
+    try {
+      const existing = sessionStorage.getItem(chatboxConversationKey);
+      if (existing) return existing;
+
+      const generated = `mounier:${Date.now()}:${Math.random().toString(36).slice(2)}`;
+      sessionStorage.setItem(chatboxConversationKey, generated);
+      return generated;
+    } catch {
+      return `mounier:${Date.now()}:${Math.random().toString(36).slice(2)}`;
+    }
+  };
+
+  const logChatExchange = (question, answerText) => {
+    if (!chatboxLogEndpoint || !window.fetch) return;
+
+    fetch(chatboxLogEndpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      credentials: "omit",
+      keepalive: true,
+      body: JSON.stringify({
+        source: chatboxSource,
+        conversationId: getConversationId(),
+        userPrompt: question,
+        assistantResponse: answerText,
+        metadata: {
+          site: "carrosserie-mounier",
+          path: window.location.pathname,
+          url: window.location.href,
+        },
+      }),
+    }).catch(() => {
+      // Logging must never block the visitor experience.
+    });
+  };
+
   const answers = [
     {
       keywords: ["devis", "prix", "tarif", "combien", "cout", "coût", "estimation"],
@@ -480,6 +521,7 @@ function initMounierChatBox() {
     input.value = "";
 
     const answer = findAnswer(question);
+    logChatExchange(question, answer.text);
     setTimeout(() => appendMessage(answer.text, "bot", answer.actions), 220);
   });
 }
