@@ -357,8 +357,12 @@ function initMounierChatBox() {
         assistantResponse: answerText,
         metadata: {
           site: "carrosserie-mounier",
-          path: window.location.pathname,
-          url: window.location.href,
+          page: {
+            path: window.location.pathname,
+            url: window.location.href,
+            title: document.title || "",
+            referrer: document.referrer || null,
+          },
         },
       }),
     }).catch(() => {
@@ -445,6 +449,14 @@ function initMounierChatBox() {
     };
   };
 
+  const preMessages = [
+    "Demander un devis",
+    "Assurance / sinistre",
+    "Horaires / contact",
+    "Rénovation optique",
+    "Covering / flocage",
+  ];
+
   const chat = document.createElement("section");
   chat.className = "site-chat";
   chat.setAttribute("aria-label", "Assistant Carrosserie Mounier");
@@ -461,6 +473,12 @@ function initMounierChatBox() {
       <div class="site-chat-messages" role="log" aria-live="polite">
         <div class="site-chat-message is-bot">Bonjour, je peux vous aider à trouver une prestation, demander un devis ou contacter l'atelier.</div>
       </div>
+      <div class="site-chat-pre-messages" aria-label="Pré-messages disponibles">
+        <span>Pré-messages</span>
+        <div class="site-chat-suggestions">
+          ${preMessages.map((message) => `<button type="button" data-chat-preset="${message}">${message}</button>`).join("")}
+        </div>
+      </div>
       <form class="site-chat-form">
         <input type="text" name="question" placeholder="Posez votre question..." autocomplete="off" maxlength="180">
         <button type="submit">Envoyer</button>
@@ -474,12 +492,14 @@ function initMounierChatBox() {
   const panel = chat.querySelector(".site-chat-panel");
   const closeButton = chat.querySelector("[data-chat-close]");
   const messages = chat.querySelector(".site-chat-messages");
+  const preMessagesPanel = chat.querySelector(".site-chat-pre-messages");
   const form = chat.querySelector(".site-chat-form");
   const input = form.querySelector("input");
 
   const setOpen = (isOpen) => {
     chat.classList.toggle("is-open", isOpen);
     toggleButton.setAttribute("aria-expanded", String(isOpen));
+    toggleButton.setAttribute("aria-label", isOpen ? "Fermer l'assistant" : "Ouvrir l'assistant");
     panel.setAttribute("aria-hidden", String(!isOpen));
     if (isOpen) setTimeout(() => input.focus(), 120);
   };
@@ -509,20 +529,32 @@ function initMounierChatBox() {
     messages.scrollTop = messages.scrollHeight;
   };
 
-  toggleButton.addEventListener("click", () => setOpen(!chat.classList.contains("is-open")));
-  closeButton.addEventListener("click", () => setOpen(false));
+  const removePreMessages = () => {
+    if (preMessagesPanel && preMessagesPanel.isConnected) preMessagesPanel.remove();
+  };
 
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const question = input.value.trim();
+  const submitQuestion = (rawQuestion) => {
+    const question = String(rawQuestion || "").trim();
     if (!question) return;
 
+    removePreMessages();
     appendMessage(question, "user");
     input.value = "";
 
     const answer = findAnswer(question);
     logChatExchange(question, answer.text);
     setTimeout(() => appendMessage(answer.text, "bot", answer.actions), 220);
+  };
+
+  toggleButton.addEventListener("click", () => setOpen(!chat.classList.contains("is-open")));
+  closeButton.addEventListener("click", () => setOpen(false));
+  chat.querySelectorAll("[data-chat-preset]").forEach((button) => {
+    button.addEventListener("click", () => submitQuestion(button.textContent));
+  });
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    submitQuestion(input.value);
   });
 }
 
