@@ -425,6 +425,14 @@ function initMounierChatBox() {
       ]
     },
     {
+      keywords: ["rendez-vous", "rdv", "disponibilite", "disponibilité", "creneau", "créneau", "passer"],
+      text: "Je ne peux pas prendre rendez-vous directement ici. Le plus fiable est d'appeler l'atelier ou d'envoyer une demande avec vos coordonnées.",
+      actions: [
+        { label: "Appeler", href: "tel:+33608378217" },
+        { label: "Contact", href: new URL("../contact/", scriptBase).href }
+      ]
+    },
+    {
       keywords: ["recrutement", "emploi", "poste", "candidature", "cv", "travail", "embauche"],
       text: "Vous pouvez déposer une candidature depuis la page recrutement. Le CV est nécessaire, et un court message aide l'équipe à comprendre votre parcours et ce que vous recherchez.",
       actions: [
