@@ -325,8 +325,8 @@ initSmartEmailLinks();
 function initMounierChatBox() {
   if (document.querySelector(".site-chat")) return;
 
-  const chatboxLogEndpoint = window.MOUNIER_CHATBOX_LOG_ENDPOINT || "https://lysma-super-admin.vercel.app/api/chatbox/logs";
-  const chatboxUpdatesEndpoint = window.MOUNIER_CHATBOX_UPDATES_ENDPOINT || chatboxLogEndpoint.replace(/\/logs\/?$/, "/updates");
+  const chatboxLogEndpoint = window.MOUNIER_CHATBOX_LOG_ENDPOINT || "https://lysma-super-admin.vercel.app/api/chatbox/log";
+  const chatboxUpdatesEndpoint = window.MOUNIER_CHATBOX_UPDATES_ENDPOINT || chatboxLogEndpoint.replace(/\/log\/?$/, "/updates");
   const chatboxSource = "site-vitrine:carrosserie-mounier";
   const chatboxStoragePrefix = "mounier:chatbox:v3";
   const chatboxVisitorKey = `${chatboxStoragePrefix}:visitorId`;
@@ -572,7 +572,7 @@ function initMounierChatBox() {
   chat.innerHTML = `
     <button class="site-chat-toggle" type="button" aria-expanded="false" aria-label="Ouvrir l'assistant">
       <span class="site-chat-badge" aria-hidden="true"></span>
-      <span>?</span>
+      
     </button>
     <div class="site-chat-panel" aria-hidden="true">
       <div class="site-chat-header">
