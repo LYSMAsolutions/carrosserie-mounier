@@ -55,7 +55,7 @@ if (footerInner && !footerInner.querySelector(".footer-signature")) {
 }
 
 const COOKIE_CONSENT_KEY = "mounierCookieConsent";
-const COOKIE_CONSENT_VERSION = 1;
+const COOKIE_CONSENT_VERSION = 3;
 
 function readCookieConsent() {
   try {
@@ -95,7 +95,7 @@ function initCookieConsent() {
   banner.innerHTML = `
     <div>
       <strong>Gestion des cookies</strong>
-      <p>Nous utilisons des cookies nécessaires au fonctionnement du site. Les cookies de mesure ou marketing ne sont activés qu'après votre accord.</p>
+      <p>Nous utilisons des cookies nécessaires au fonctionnement du site. Les échanges avec la chatbox peuvent être enregistrés afin d'améliorer la qualité des réponses. Un identifiant anonyme peut signaler une réponse améliorée sur ce site, sans usage publicitaire.</p>
     </div>
     <div class="cookie-consent-actions">
       <button type="button" data-cookie-choice="reject">Refuser</button>
@@ -112,7 +112,7 @@ function initCookieConsent() {
       <button class="cookie-modal-close" type="button" aria-label="Fermer" data-cookie-close>×</button>
       <span>Confidentialité</span>
       <h2 id="cookie-modal-title">Préférences cookies</h2>
-      <p>Vous pouvez choisir les finalités que vous acceptez. Les cookies nécessaires restent toujours actifs.</p>
+      <p>Vous pouvez choisir les finalités que vous acceptez. Les cookies nécessaires restent toujours actifs. La chatbox peut utiliser un identifiant anonyme uniquement pour retrouver une conversation et signaler une réponse améliorée.</p>
       <label class="cookie-option is-disabled">
         <input type="checkbox" checked disabled>
         <span><strong>Nécessaires</strong><small>Fonctionnement du site et mémorisation du consentement.</small></span>
@@ -326,23 +326,72 @@ function initMounierChatBox() {
   if (document.querySelector(".site-chat")) return;
 
   const chatboxLogEndpoint = window.MOUNIER_CHATBOX_LOG_ENDPOINT || "https://lysma-super-admin.vercel.app/api/chatbox/logs";
+  const chatboxUpdatesEndpoint = window.MOUNIER_CHATBOX_UPDATES_ENDPOINT || chatboxLogEndpoint.replace(/\/logs\/?$/, "/updates");
   const chatboxSource = "site-vitrine:carrosserie-mounier";
-  const chatboxConversationKey = "mounierChatboxConversationId";
+  const chatboxStoragePrefix = "mounier:chatbox:v3";
+  const chatboxVisitorKey = `${chatboxStoragePrefix}:visitorId`;
+  const chatboxSessionKey = `${chatboxStoragePrefix}:sessionId`;
+  const chatboxConversationKey = `${chatboxStoragePrefix}:conversationId`;
+  const chatboxOptOutKey = `${chatboxStoragePrefix}:disabled`;
+
+  const randomChatboxId = (prefix) => {
+    if (window.crypto && typeof window.crypto.randomUUID === "function") {
+      return `${prefix}_${window.crypto.randomUUID()}`;
+    }
+    return `${prefix}_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 12)}`;
+  };
+
+  const isChatboxStorageDisabled = () => {
+    try {
+      return localStorage.getItem(chatboxOptOutKey) === "true";
+    } catch {
+      return false;
+    }
+  };
+
+  const getStoredChatboxId = (storage, key, prefix) => {
+    if (!storage) return randomChatboxId(prefix);
+
+    try {
+      const existing = storage.getItem(key);
+      if (existing) return existing;
+      const generated = randomChatboxId(prefix);
+      storage.setItem(key, generated);
+      return generated;
+    } catch {
+      return randomChatboxId(prefix);
+    }
+  };
+
+  const getVisitorId = () => {
+    if (isChatboxStorageDisabled()) return null;
+    return getStoredChatboxId(localStorage, chatboxVisitorKey, "visitor");
+  };
+
+  const getSessionId = () => {
+    if (isChatboxStorageDisabled()) return randomChatboxId("session");
+    return getStoredChatboxId(sessionStorage, chatboxSessionKey, "session");
+  };
 
   const getConversationId = () => {
+    if (isChatboxStorageDisabled()) return randomChatboxId("conversation");
     try {
       const existing = sessionStorage.getItem(chatboxConversationKey);
       if (existing) return existing;
 
-      const generated = `mounier:${Date.now()}:${Math.random().toString(36).slice(2)}`;
+      const generated = randomChatboxId("conversation");
       sessionStorage.setItem(chatboxConversationKey, generated);
       return generated;
     } catch {
-      return `mounier:${Date.now()}:${Math.random().toString(36).slice(2)}`;
+      return randomChatboxId("conversation");
     }
   };
 
-  const logChatExchange = (question, answerText) => {
+  let visitorId = getVisitorId();
+  let sessionId = getSessionId();
+  let conversationId = getConversationId();
+
+  const logChatExchange = (question, answerText, options = {}) => {
     if (!chatboxLogEndpoint || !window.fetch) return;
 
     fetch(chatboxLogEndpoint, {
@@ -352,9 +401,14 @@ function initMounierChatBox() {
       keepalive: true,
       body: JSON.stringify({
         source: chatboxSource,
-        conversationId: getConversationId(),
+        conversationId,
+        visitorId,
+        sessionId,
         userPrompt: question,
         assistantResponse: answerText,
+        quality: options.quality,
+        qualityNotes: options.qualityNotes,
+        problemType: options.problemType,
         metadata: {
           site: "carrosserie-mounier",
           page: {
@@ -363,6 +417,11 @@ function initMounierChatBox() {
             title: document.title || "",
             referrer: document.referrer || null,
           },
+          privacy: {
+            visitorIdEnabled: Boolean(visitorId),
+            storageDisabled: isChatboxStorageDisabled(),
+          },
+          ...(options.metadata || {}),
         },
       }),
     }).catch(() => {
@@ -446,6 +505,48 @@ function initMounierChatBox() {
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "");
 
+  const escapeHtml = (value) => String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+
+  const normalizeSignal = (value) => normalize(value)
+    .replace(/[^a-z0-9\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  const detectNegativeFeedback = (message) => {
+    const text = normalizeSignal(message);
+    if ([
+      "tu nas pas repondu",
+      "tu n as pas repondu",
+      "ce nest pas ma question",
+      "ce n est pas ma question",
+      "tu reponds a cote",
+      "tu nas pas compris",
+      "tu n as pas compris",
+    ].some((phrase) => text.includes(phrase))) {
+      return "MISUNDERSTANDING";
+    }
+
+    if ([
+      "relis ma question",
+      "ce nest pas ce que jai demande",
+      "ce n est pas ce que j ai demande",
+      "pourquoi tu me parles de ca",
+    ].some((phrase) => text.includes(phrase))) {
+      return "LOST_CONTEXT";
+    }
+
+    if (["cest faux", "c est faux", "nimporte quoi", "n importe quoi"].some((phrase) => text.includes(phrase))) {
+      return "USER_NEGATIVE_FEEDBACK";
+    }
+
+    return null;
+  };
+
   const findAnswer = (question) => {
     const normalizedQuestion = normalize(question);
     return answers.find((answer) => answer.keywords.some((keyword) => normalizedQuestion.includes(normalize(keyword)))) || {
@@ -470,6 +571,7 @@ function initMounierChatBox() {
   chat.setAttribute("aria-label", "Assistant Carrosserie Mounier");
   chat.innerHTML = `
     <button class="site-chat-toggle" type="button" aria-expanded="false" aria-label="Ouvrir l'assistant">
+      <span class="site-chat-badge" aria-hidden="true"></span>
       <span>?</span>
     </button>
     <div class="site-chat-panel" aria-hidden="true">
@@ -478,9 +580,12 @@ function initMounierChatBox() {
         <strong>Carrosserie Mounier</strong>
         <button type="button" aria-label="Fermer l'assistant" data-chat-close>×</button>
       </div>
+      <div class="site-chat-updates" hidden></div>
       <div class="site-chat-messages" role="log" aria-live="polite">
         <div class="site-chat-message is-bot">Bonjour. Dites-moi ce qu'il vous faut : devis, assurance, carrosserie, optiques, horaires ou contact atelier.</div>
       </div>
+      <p class="site-chat-feedback" hidden></p>
+      <p class="site-chat-notice">Les échanges peuvent être enregistrés pour améliorer la qualité des réponses. L'identifiant anonyme sert seulement à retrouver cette conversation sur ce site.</p>
       <div class="site-chat-pre-messages" aria-label="Pré-messages disponibles">
         <span>Pré-messages</span>
         <div class="site-chat-suggestions">
@@ -491,6 +596,7 @@ function initMounierChatBox() {
         <input type="text" name="question" placeholder="Posez votre question..." autocomplete="off" maxlength="180">
         <button type="submit">Envoyer</button>
       </form>
+      <button class="site-chat-optout" type="button">Ne pas conserver ma conversation</button>
     </div>
   `;
 
@@ -500,23 +606,104 @@ function initMounierChatBox() {
   const panel = chat.querySelector(".site-chat-panel");
   const closeButton = chat.querySelector("[data-chat-close]");
   const messages = chat.querySelector(".site-chat-messages");
+  const badge = chat.querySelector(".site-chat-badge");
+  const updatesPanel = chat.querySelector(".site-chat-updates");
+  const feedback = chat.querySelector(".site-chat-feedback");
+  const optOutButton = chat.querySelector(".site-chat-optout");
   const preMessagesPanel = chat.querySelector(".site-chat-pre-messages");
   const form = chat.querySelector(".site-chat-form");
   const input = form.querySelector("input");
+  let unreadUpdates = [];
+  let lastExchange = null;
 
   const setOpen = (isOpen) => {
     chat.classList.toggle("is-open", isOpen);
     toggleButton.setAttribute("aria-expanded", String(isOpen));
     toggleButton.setAttribute("aria-label", isOpen ? "Fermer l'assistant" : "Ouvrir l'assistant");
     panel.setAttribute("aria-hidden", String(!isOpen));
+    if (isOpen) markUpdatesSeen();
     if (isOpen) setTimeout(() => input.focus(), 120);
   };
 
-  const appendMessage = (text, type, actions = []) => {
+  const renderUpdates = () => {
+    if (!updatesPanel || unreadUpdates.length === 0) return;
+
+    updatesPanel.hidden = false;
+    updatesPanel.innerHTML = `
+      <strong>Une réponse à votre question a été améliorée.</strong>
+      ${unreadUpdates.map((update) => `
+        <div>
+          <span>Question initiale</span>
+          <p>${escapeHtml(update.userPrompt || "")}</p>
+          <span>Nouvelle réponse</span>
+          <p>${escapeHtml(update.improvedResponse || "")}</p>
+        </div>
+      `).join("")}
+    `;
+    if (badge) badge.classList.add("is-visible");
+  };
+
+  const loadUpdates = () => {
+    if (!chatboxUpdatesEndpoint || !visitorId || !window.fetch) return;
+
+    const url = new URL(chatboxUpdatesEndpoint);
+    url.searchParams.set("source", chatboxSource);
+    url.searchParams.set("visitorId", visitorId);
+
+    fetch(url.toString(), {
+      method: "GET",
+      credentials: "omit",
+    })
+      .then((response) => response.ok ? response.json() : null)
+      .then((data) => {
+        unreadUpdates = Array.isArray(data?.updates) ? data.updates : [];
+        renderUpdates();
+      })
+      .catch(() => undefined);
+  };
+
+  const markUpdatesSeen = () => {
+    if (!chatboxUpdatesEndpoint || !visitorId || unreadUpdates.length === 0 || !window.fetch) return;
+
+    if (badge) badge.classList.remove("is-visible");
+    unreadUpdates.forEach((update) => {
+      fetch(chatboxUpdatesEndpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "omit",
+        keepalive: true,
+        body: JSON.stringify({
+          source: chatboxSource,
+          visitorId,
+          updateId: update.id,
+        }),
+      }).catch(() => undefined);
+    });
+  };
+
+  const appendMessage = (text, type, actions = [], report = null) => {
     const message = document.createElement("div");
     message.className = `site-chat-message is-${type}`;
     message.textContent = text;
     messages.append(message);
+
+    if (report) {
+      const reportButton = document.createElement("button");
+      reportButton.type = "button";
+      reportButton.className = "site-chat-report";
+      reportButton.textContent = "Signaler cette réponse";
+      reportButton.addEventListener("click", () => {
+        logChatExchange(report.question, report.answer, {
+          quality: "BAD",
+          problemType: "USER_REPORTED",
+          qualityNotes: "Signalement utilisateur depuis la chatbox.",
+          metadata: { report: { reportedAnswer: report.answer } },
+        });
+        feedback.textContent = "Merci, le retour a bien été transmis. Cela nous aide à améliorer les réponses.";
+        feedback.hidden = false;
+      });
+      messages.append(reportButton);
+    }
 
     if (actions.length) {
       const actionList = document.createElement("div");
@@ -546,12 +733,30 @@ function initMounierChatBox() {
     if (!question) return;
 
     removePreMessages();
+    feedback.hidden = true;
     appendMessage(question, "user");
     input.value = "";
 
+    const problemType = detectNegativeFeedback(question);
+    if (problemType) {
+      const answerText = lastExchange
+        ? `D'accord, je reprends en partant de votre question précédente. ${findAnswer(lastExchange.question).text}`
+        : "D'accord, je reprends. Ma réponse précédente n'était pas assez claire : précisez le point à corriger.";
+
+      logChatExchange(question, lastExchange?.answer || answerText, {
+        quality: "BAD",
+        problemType,
+        qualityNotes: "Signal d'incomprehension utilisateur depuis la chatbox.",
+        metadata: lastExchange ? { feedback: lastExchange } : undefined,
+      });
+      setTimeout(() => appendMessage(answerText, "bot"), 220);
+      return;
+    }
+
     const answer = findAnswer(question);
     logChatExchange(question, answer.text);
-    setTimeout(() => appendMessage(answer.text, "bot", answer.actions), 220);
+    lastExchange = { question, answer: answer.text };
+    setTimeout(() => appendMessage(answer.text, "bot", answer.actions, { question, answer: answer.text }), 220);
   };
 
   toggleButton.addEventListener("click", () => setOpen(!chat.classList.contains("is-open")));
@@ -564,6 +769,33 @@ function initMounierChatBox() {
     event.preventDefault();
     submitQuestion(input.value);
   });
+
+  optOutButton.addEventListener("click", () => {
+    try {
+      localStorage.setItem(chatboxOptOutKey, "true");
+      localStorage.removeItem(chatboxVisitorKey);
+      sessionStorage.removeItem(chatboxSessionKey);
+      sessionStorage.removeItem(chatboxConversationKey);
+    } catch {
+      // Keep the assistant usable even if storage is unavailable.
+    }
+
+    visitorId = null;
+    sessionId = randomChatboxId("session");
+    conversationId = randomChatboxId("conversation");
+    unreadUpdates = [];
+    if (badge) badge.classList.remove("is-visible");
+    if (updatesPanel) updatesPanel.hidden = true;
+    optOutButton.textContent = "Conversation non conservée";
+    optOutButton.disabled = true;
+  });
+
+  if (isChatboxStorageDisabled()) {
+    optOutButton.textContent = "Conversation non conservée";
+    optOutButton.disabled = true;
+  }
+
+  loadUpdates();
 }
 
 initMounierChatBox();
