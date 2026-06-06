@@ -571,7 +571,7 @@ function initMounierChatBox() {
   chat.setAttribute("aria-label", "Assistant Carrosserie Mounier");
   chat.innerHTML = `
     <button class="site-chat-toggle" type="button" aria-expanded="false" aria-label="Ouvrir l'assistant">
-      <span class="site-chat-badge" aria-hidden="true"></span>
+      <span Assistant aria-hidden="true"></span>
       
     </button>
     <div class="site-chat-panel" aria-hidden="true">
