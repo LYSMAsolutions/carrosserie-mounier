@@ -476,11 +476,27 @@ function initMounierChatBox() {
       ]
     },
     {
-      keywords: ["horaire", "horaires", "ouvert", "adresse", "itineraire", "itinéraire", "venir", "telephone", "téléphone", "mail", "email"],
-      text: "Pour nous joindre, vous pouvez appeler la Carrosserie Mounier au 06 08 37 82 17, écrire par email ou ouvrir l'itinéraire Google Maps pour venir à l'atelier.",
+      keywords: ["horaire", "horaires", "ouvert", "ouverte", "ouverture", "ferme", "fermé", "fermee", "fermée"],
+      text: "L'atelier est ouvert du lundi au vendredi, de 8h00 à 12h00 puis de 14h00 à 18h00. Pour confirmer un passage, vous pouvez appeler au 06 08 37 82 17.",
       actions: [
         { label: "Appeler", href: "tel:+33608378217" },
-        { label: "Itinéraire", href: "https://www.google.com/maps/search/?api=1&query=32+Route+du+Pouyault+24750+Tr%C3%A9lissac", external: true }
+        { label: "Contact", href: new URL("../contact/", scriptBase).href }
+      ]
+    },
+    {
+      keywords: ["adresse", "itineraire", "itinéraire", "venir", "localisation", "localiser", "situe", "situé", "trouver", "maps", "google maps"],
+      text: "L'atelier se trouve au 32 Route du Pouyault, 24750 Trélissac. Vous pouvez ouvrir l'itinéraire Google Maps pour vous y rendre directement.",
+      actions: [
+        { label: "Itinéraire", href: "https://www.google.com/maps/search/?api=1&query=32+Route+du+Pouyault+24750+Tr%C3%A9lissac", external: true },
+        { label: "Appeler", href: "tel:+33608378217" }
+      ]
+    },
+    {
+      keywords: ["telephone", "téléphone", "appeler", "appel", "mail", "email", "contacter", "contact", "joindre"],
+      text: "Vous pouvez joindre la Carrosserie Mounier au 06 08 37 82 17 ou par email à contact@carrosserie-mounier.fr. Pour une demande précise, indiquez le véhicule et le type de travaux souhaité.",
+      actions: [
+        { label: "Appeler", href: "tel:+33608378217" },
+        { label: "Email", href: "mailto:contact@carrosserie-mounier.fr" }
       ]
     },
     {
@@ -561,7 +577,8 @@ function initMounierChatBox() {
   const preMessages = [
     "Demander un devis",
     "Assurance / sinistre",
-    "Horaires / contact",
+    "Horaires d'ouverture",
+    "Adresse / itinéraire",
     "Rénovation optique",
     "Covering / flocage",
   ];
